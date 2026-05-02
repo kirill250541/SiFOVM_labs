@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="laba7_var1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_1:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_a9l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_2:inst17|lpm_counter0:inst17|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_qem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_3:inst18|lpm_counter2:inst3|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_33k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_4:inst19|lpm_counter3:inst17|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_83k.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

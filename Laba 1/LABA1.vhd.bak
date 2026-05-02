@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity LABA1 is
+    Port (
+        C  : in  STD_LOGIC;
+        D0 : in  STD_LOGIC;
+        Q0, Q1, Q2, Q3, Q4, Q5, Q6, Q7 : out STD_LOGIC
+    );
+end LABA1;
+
+architecture Structural of LABA1 is
+    signal s : STD_LOGIC_VECTOR(7 downto 0);
+begin
+    process(C)
+    begin
+        if rising_edge(C) then
+            s(0) <= D0;   -- Первый триггер берет вход D0
+            s(1) <= s(0); -- Второй берет выход первого
+            s(2) <= s(1); -- И так далее...
+            s(3) <= s(2);
+            s(4) <= s(3);
+            s(5) <= s(4);
+            s(6) <= s(5);
+            s(7) <= s(6);
+        end if;
+    end process;
+
+    -- Вывод сигналов наружу
+    Q0 <= s(0); Q1 <= s(1); Q2 <= s(2); Q3 <= s(3);
+    Q4 <= s(4); Q5 <= s(5); Q6 <= s(6); Q7 <= s(7);
+end Structural;

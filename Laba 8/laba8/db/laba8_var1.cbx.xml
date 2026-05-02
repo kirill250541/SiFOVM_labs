@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="laba8_var1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst1|cache_line:inst2|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst2|cache_line:inst|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst3|cache_line:inst|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst|cache_line:inst2|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst1|cache_line:inst2|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst2|cache_line:inst2|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst3|cache_line:inst|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst1|cache_line:inst|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst2|cache_line:inst2|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst3|cache_line:inst2|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst|cache_line:inst|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst|lpm_mux1:inst9|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|lpm_decode0:inst10|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst1|cache_line:inst|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst1|lpm_mux1:inst9|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst2|cache_line:inst|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst3|cache_line:inst2|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst|cache_line:inst2|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst2|lpm_mux1:inst9|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|lpm_mux2:inst12|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_c4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst3|lpm_mux1:inst9|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba8_var1|cache_final:inst|cache_line:inst|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

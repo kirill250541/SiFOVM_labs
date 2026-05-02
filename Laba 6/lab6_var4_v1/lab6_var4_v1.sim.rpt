@@ -1,0 +1,334 @@
+Simulator report for lab6_var4_v1
+Thu Apr 30 18:18:30 2026
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 123 nodes    ;
+; Simulation Coverage         ;      45.60 % ;
+; Total Number of Transitions ; 840          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; stack_unit.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      45.60 % ;
+; Total nodes checked                                 ; 123          ;
+; Total output ports checked                          ; 125          ;
+; Total output ports with complete 1/0-value coverage ; 57           ;
+; Total output ports with no 1/0-value coverage       ; 47           ;
+; Total output ports with no 1-value coverage         ; 47           ;
+; Total output ports with no 0-value coverage         ; 68           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                              ;
++-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                         ; Output Port Name                                                                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_reg_bit1a[2]    ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|safe_q[2]               ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_reg_bit1a[1]    ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|safe_q[1]               ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_reg_bit1a[0]    ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|safe_q[0]               ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita0      ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita0      ; sumout           ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita0      ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita1      ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita1      ; sumout           ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita1      ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita2      ; |stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_g1h:auto_generated|counter_comb_bita2      ; sumout           ;
+; |stack_unit|stack_memory:inst|inst13                                                                                              ; |stack_unit|stack_memory:inst|inst13                                                                                              ; combout          ;
+; |stack_unit|stack_memory:inst|inst7                                                                                               ; |stack_unit|stack_memory:inst|inst7                                                                                               ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~1             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~1             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~2             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~2             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w5_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w5_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w5_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w5_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w5_n0_mux_dataout~1             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w5_n0_mux_dataout~1             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w4_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w4_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w4_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w4_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w4_n0_mux_dataout~1             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w4_n0_mux_dataout~1             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w2_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w2_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w2_n0_mux_dataout~1             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w2_n0_mux_dataout~1             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w1_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w1_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w1_n0_mux_dataout~1             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w1_n0_mux_dataout~1             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w0_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w0_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w0_n0_mux_dataout~0             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w0_n0_mux_dataout~0             ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w0_n0_mux_dataout~1             ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w0_n0_mux_dataout~1             ; combout          ;
+; |stack_unit|stack_control:inst1|inst22                                                                                            ; |stack_unit|stack_control:inst1|inst22                                                                                            ; combout          ;
+; |stack_unit|stack_memory:inst|inst1                                                                                               ; |stack_unit|stack_memory:inst|inst1                                                                                               ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode68w[3]           ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode68w[3]           ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode48w[3]           ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode48w[3]           ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode58w[3]           ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode58w[3]           ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode18w[3]           ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode18w[3]           ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode28w[3]           ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode28w[3]           ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode38w[3]           ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode38w[3]           ; combout          ;
+; |stack_unit|FULL                                                                                                                  ; |stack_unit|FULL                                                                                                                  ; padio            ;
+; |stack_unit|EMPTY                                                                                                                 ; |stack_unit|EMPTY                                                                                                                 ; padio            ;
+; |stack_unit|data_out[5]                                                                                                           ; |stack_unit|data_out[5]                                                                                                           ; padio            ;
+; |stack_unit|data_out[4]                                                                                                           ; |stack_unit|data_out[4]                                                                                                           ; padio            ;
+; |stack_unit|data_out[2]                                                                                                           ; |stack_unit|data_out[2]                                                                                                           ; padio            ;
+; |stack_unit|data_out[1]                                                                                                           ; |stack_unit|data_out[1]                                                                                                           ; padio            ;
+; |stack_unit|data_out[0]                                                                                                           ; |stack_unit|data_out[0]                                                                                                           ; padio            ;
+; |stack_unit|clk                                                                                                                   ; |stack_unit|clk~corein                                                                                                            ; combout          ;
+; |stack_unit|CMD[0]                                                                                                                ; |stack_unit|CMD[0]~corein                                                                                                         ; combout          ;
+; |stack_unit|CMD[1]                                                                                                                ; |stack_unit|CMD[1]~corein                                                                                                         ; combout          ;
+; |stack_unit|data_in[5]                                                                                                            ; |stack_unit|data_in[5]~corein                                                                                                     ; combout          ;
+; |stack_unit|data_in[4]                                                                                                            ; |stack_unit|data_in[4]~corein                                                                                                     ; combout          ;
+; |stack_unit|data_in[2]                                                                                                            ; |stack_unit|data_in[2]~corein                                                                                                     ; combout          ;
+; |stack_unit|data_in[1]                                                                                                            ; |stack_unit|data_in[1]~corein                                                                                                     ; combout          ;
+; |stack_unit|data_in[0]                                                                                                            ; |stack_unit|data_in[0]~corein                                                                                                     ; combout          ;
+; |stack_unit|clk~clkctrl                                                                                                           ; |stack_unit|clk~clkctrl                                                                                                           ; outclk           ;
+; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode68w[3]~DUPLICATE ; |stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component|decode_5sf:auto_generated|w_anode68w[3]~DUPLICATE ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[5]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[5]~feeder                                                ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[5]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[5]~feeder                                                ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[4]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[4]~feeder                                                ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[4]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[4]~feeder                                                ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[2]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[2]~feeder                                                ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[0]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[0]~feeder                                                ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[0]~feeder                                                ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[0]~feeder                                                ; combout          ;
++-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                         ;
++-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                             ; Output Port Name                                                                                                      ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w7_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w7_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~3 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~3 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w6_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w6_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~1 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~1 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w3_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w3_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~1 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~1 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w2_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w2_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w1_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w1_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|data_out[7]                                                                                               ; |stack_unit|data_out[7]                                                                                               ; padio            ;
+; |stack_unit|data_out[6]                                                                                               ; |stack_unit|data_out[6]                                                                                               ; padio            ;
+; |stack_unit|data_out[3]                                                                                               ; |stack_unit|data_out[3]                                                                                               ; padio            ;
+; |stack_unit|stack_en                                                                                                  ; |stack_unit|stack_en~corein                                                                                           ; combout          ;
+; |stack_unit|data_in[7]                                                                                                ; |stack_unit|data_in[7]~corein                                                                                         ; combout          ;
+; |stack_unit|data_in[6]                                                                                                ; |stack_unit|data_in[6]~corein                                                                                         ; combout          ;
+; |stack_unit|data_in[3]                                                                                                ; |stack_unit|data_in[3]~corein                                                                                         ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; combout          ;
++-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                         ;
++-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                             ; Output Port Name                                                                                                      ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w7_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w7_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~3 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w7_n0_mux_dataout~3 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w6_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w6_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~1 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w6_n0_mux_dataout~1 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[5]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[5]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[5]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[5]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[5]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[4]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[4]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[4]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[4]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[4]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w3_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w3_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~1 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l3_w3_n0_mux_dataout~1 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w2_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w2_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w1_n0_mux_dataout~0 ; |stack_unit|stack_memory:inst|lpm_mux0:inst11|lpm_mux:lpm_mux_component|mux_h4e:auto_generated|l1_w1_n0_mux_dataout~0 ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[1]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff5:inst9|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff0:inst3|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[0]                                           ; |stack_unit|stack_memory:inst|lpm_ff2:inst5|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
+; |stack_unit|data_out[7]                                                                                               ; |stack_unit|data_out[7]                                                                                               ; padio            ;
+; |stack_unit|data_out[6]                                                                                               ; |stack_unit|data_out[6]                                                                                               ; padio            ;
+; |stack_unit|data_out[3]                                                                                               ; |stack_unit|data_out[3]                                                                                               ; padio            ;
+; |stack_unit|stack_en                                                                                                  ; |stack_unit|stack_en~corein                                                                                           ; combout          ;
+; |stack_unit|data_in[7]                                                                                                ; |stack_unit|data_in[7]~corein                                                                                         ; combout          ;
+; |stack_unit|data_in[6]                                                                                                ; |stack_unit|data_in[6]~corein                                                                                         ; combout          ;
+; |stack_unit|data_in[3]                                                                                                ; |stack_unit|data_in[3]~corein                                                                                         ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; |stack_unit|stack_memory:inst|lpm_ff4:inst8|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; combout          ;
+; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; |stack_unit|stack_memory:inst|lpm_ff3:inst6|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; combout          ;
++-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Apr 30 18:18:30 2026
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab6_var4_v1 -c lab6_var4_v1
+Info: Using vector source file "C:/Users/user/Desktop/labs/Laba 6/lab6_var4_v1/stack_unit.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      45.60 %
+Info: Number of transitions in simulation is 840
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 169 megabytes
+    Info: Processing ended: Thu Apr 30 18:18:30 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

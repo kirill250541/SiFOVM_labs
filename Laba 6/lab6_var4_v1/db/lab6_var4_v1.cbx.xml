@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab6_var4_v1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|stack_unit|stack_control:inst1|lpm_decode1:inst|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|stack_unit|stack_memory:inst|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_g1h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|stack_unit|stack_memory:inst|lpm_decode0:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_5sf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|stack_unit|stack_memory:inst|lpm_mux0:inst11|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_h4e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
