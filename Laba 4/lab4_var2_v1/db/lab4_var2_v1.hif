@@ -35,9 +35,6 @@ b45fe09b74931b3ca21ec68c3b8fb
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-clock_generator:inst
-}
 # macro_sequence
 
 # end
@@ -54,9 +51,6 @@ lab2_var2_v1|dca_gen.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-clock_generator:inst|dca_gen:inst6
 }
 # macro_sequence
 
@@ -84,9 +78,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_decode0:inst4
 }
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
@@ -208,9 +199,6 @@ data0
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component
-}
 # macro_sequence
 
 # end
@@ -286,9 +274,6 @@ data0
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated
-}
 # macro_sequence
 
 # end
@@ -315,9 +300,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter1:inst3
 }
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
@@ -429,9 +411,6 @@ clk_en
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -465,9 +444,6 @@ clk_en
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated
-}
 # macro_sequence
 
 # end
@@ -488,9 +464,6 @@ cout
 clock
 -1
 3
-}
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter0:inst
 }
 # macro_sequence
 
@@ -599,9 +572,6 @@ clock
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -634,9 +604,6 @@ cout
 clock
 -1
 3
-}
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated
 }
 # macro_sequence
 
@@ -680,9 +647,6 @@ aeb
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|dca_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|cmpr_adc:cmpr2
-}
 # macro_sequence
 
 # end
@@ -699,9 +663,6 @@ fcab481319b1dfa87e34b2655ef5b7d6
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-clock_generator:inst|single_pulse:inst
 }
 # macro_sequence
 
@@ -729,9 +690,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-clock_generator:inst|single_pulse:inst|lpm_compare0:inst5
 }
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
@@ -834,9 +792,6 @@ datab0
 -1
 2
 }
-# hierarchies {
-clock_generator:inst|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -873,9 +828,6 @@ ageb
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated
-}
 # macro_sequence
 
 # end
@@ -902,9 +854,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-clock_generator:inst|single_pulse:inst|lpm_counter2:inst
 }
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
@@ -1010,9 +959,6 @@ clock
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -1040,9 +986,6 @@ clock
 -1
 3
 }
-# hierarchies {
-clock_generator:inst|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated
-}
 # macro_sequence
 
 # end
@@ -1069,9 +1012,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-lpm_counter3:inst4
 }
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
@@ -1219,9 +1159,6 @@ clock
 -1
 3
 }
-# hierarchies {
-lpm_counter3:inst4|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -1291,9 +1228,6 @@ clock
 -1
 3
 }
-# hierarchies {
-lpm_counter3:inst4|lpm_counter:lpm_counter_component|cntr_bli:auto_generated
-}
 # macro_sequence
 
 # end
@@ -1320,9 +1254,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-lpm_ff1:POH
 }
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
@@ -1435,11 +1366,6 @@ clock
 -1
 3
 }
-# hierarchies {
-lpm_ff1:POH|lpm_ff:lpm_ff_component
-lpm_ff2:IR|lpm_ff:lpm_ff_component
-rom_ram_interface:inst8|lpm_ff0:inst1|lpm_ff:lpm_ff_component
-}
 # macro_sequence
 
 # end
@@ -1467,9 +1393,6 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# hierarchies {
-lpm_ff2:IR
-}
 # lmf
 |altera|91|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
@@ -1489,9 +1412,6 @@ lab3_var7_v1|rom_ram_interface.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-rom_ram_interface:inst8
 }
 # macro_sequence
 
@@ -1558,9 +1478,6 @@ data0
 clock
 -1
 3
-}
-# hierarchies {
-rom_ram_interface:inst8|lpm_ff0:inst1
 }
 # macro_sequence
 
@@ -1733,9 +1650,6 @@ address1
 address0
 -1
 3
-}
-# hierarchies {
-rom_ram_interface:inst8|lpm_rom0:inst
 }
 # macro_sequence
 
@@ -1993,9 +1907,6 @@ address_a0
 -1
 3
 }
-# hierarchies {
-rom_ram_interface:inst8|lpm_rom0:inst|altsyncram:altsyncram_component
-}
 # macro_sequence
 
 # end
@@ -2053,9 +1964,6 @@ address_a0
 # memory_file {
 rom_var7.hex
 1a4c35eb1aa3cf713de4776c9ae471a6
-}
-# hierarchies {
-rom_ram_interface:inst8|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_9v71:auto_generated
 }
 # macro_sequence
 
@@ -2173,9 +2081,6 @@ address1
 address0
 -1
 3
-}
-# hierarchies {
-rom_ram_interface:inst8|lpm_ram_io:inst2
 }
 # macro_sequence
 
@@ -2323,9 +2228,6 @@ address1
 address0
 -1
 3
-}
-# hierarchies {
-rom_ram_interface:inst8|lpm_ram_io:inst2|altram:sram
 }
 # macro_sequence
 
@@ -2610,9 +2512,6 @@ address_a0
 -1
 3
 }
-# hierarchies {
-rom_ram_interface:inst8|lpm_ram_io:inst2|altram:sram|altsyncram:ram_block
-}
 # macro_sequence
 
 # end
@@ -2693,29 +2592,6 @@ address_a1
 address_a0
 -1
 3
-}
-# hierarchies {
-rom_ram_interface:inst8|lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-lab4_var2_v1
-# storage
-db|lab4_var2_v1.(0).cnf
-db|lab4_var2_v1.(0).cnf
-# case_insensitive
-# source_file
-lab4_var2_v1.bdf
-dceabae470ea93e5ebcd4622fe78
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
