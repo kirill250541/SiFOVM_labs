@@ -16,7 +16,8 @@
 FUNCTION lpm_ff2 
 (
 	clock,
-	data[7..0]
+	data[7..0],
+	enable
 )
 
 RETURNS (

@@ -13,6 +13,12 @@ lab3
 --lpm_ram_io
 --lpm_ff0
 lab4
--lpm_counter3
--lpm_ff2
--lpm_ff1
+-control_unit
+--lpm_dff0
+--lpm_dff1
+--lpm_ff2
+--lpm_ff3
+--lpm_counter3
+--lpm_mux1
+--lpm_decode1
+--lpm_add_sub0

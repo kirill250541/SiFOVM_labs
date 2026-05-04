@@ -15,11 +15,12 @@
 
 FUNCTION lpm_counter3 
 (
+	clk_en,
 	clock,
-	data[7..0],
+	data[3..0],
 	sload
 )
 
 RETURNS (
-	q[7..0]
+	q[3..0]
 );

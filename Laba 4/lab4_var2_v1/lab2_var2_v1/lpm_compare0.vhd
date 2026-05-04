@@ -71,7 +71,7 @@ ARCHITECTURE SYN OF lpm_compare0 IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(2 DOWNTO 0) <= "011";
+	sub_wire1_bv(2 DOWNTO 0) <= "010";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	AgeB    <= sub_wire0;
 
@@ -104,7 +104,7 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "1"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "3"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "2"
 -- Retrieval info: PRIVATE: Radix NUMERIC "10"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
@@ -120,7 +120,7 @@ END SYN;
 -- Retrieval info: USED_PORT: dataa 0 0 3 0 INPUT NODEFVAL dataa[2..0]
 -- Retrieval info: CONNECT: AgeB 0 0 0 0 @AgeB 0 0 0 0
 -- Retrieval info: CONNECT: @dataa 0 0 3 0 dataa 0 0 3 0
--- Retrieval info: CONNECT: @datab 0 0 3 0 3 0 0 0 0
+-- Retrieval info: CONNECT: @datab 0 0 3 0 2 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.inc TRUE

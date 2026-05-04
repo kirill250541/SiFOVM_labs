@@ -1,5 +1,5 @@
 Simulator report for lab2_var2_v1
-Wed Apr 29 18:14:45 2026
+Mon May 04 19:22:48 2026
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -45,42 +45,42 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 10.0 us      ;
-; Simulation Netlist Size     ; 53 nodes     ;
-; Simulation Coverage         ;      96.67 % ;
-; Total Number of Transitions ; 5856         ;
+; Simulation Netlist Size     ; 62 nodes     ;
+; Simulation Coverage         ;      83.10 % ;
+; Total Number of Transitions ; 5959         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 ; Device                      ; EP2S15F484C3 ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                            ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
-; Option                                                                                     ; Setting          ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
-; Simulation mode                                                                            ; Timing           ; Timing        ;
-; Start time                                                                                 ; 0 ns             ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF             ;               ;
-; Vector input source                                                                        ; lab2_var2_v1.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
-; Check outputs                                                                              ; Off              ; Off           ;
-; Report simulation coverage                                                                 ; On               ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
-; Display missing 1-value coverage report                                                    ; On               ; On            ;
-; Display missing 0-value coverage report                                                    ; On               ; On            ;
-; Detect setup and hold time violations                                                      ; Off              ; Off           ;
-; Detect glitches                                                                            ; Off              ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
-; Generate Signal Activity File                                                              ; Off              ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
-; Group bus channels in simulation results                                                   ; Off              ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off              ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Option                                                                                     ; Setting             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Simulation mode                                                                            ; Timing              ; Timing        ;
+; Start time                                                                                 ; 0 ns                ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                ;               ;
+; Vector input source                                                                        ; clock_generator.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                  ; On            ;
+; Check outputs                                                                              ; Off                 ; Off           ;
+; Report simulation coverage                                                                 ; On                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                 ; Off           ;
+; Detect glitches                                                                            ; Off                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
 
 
 +----------------------+
@@ -95,103 +95,120 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      96.67 % ;
-; Total nodes checked                                 ; 53           ;
-; Total output ports checked                          ; 60           ;
-; Total output ports with complete 1/0-value coverage ; 58           ;
-; Total output ports with no 1/0-value coverage       ; 2            ;
-; Total output ports with no 1-value coverage         ; 2            ;
-; Total output ports with no 0-value coverage         ; 2            ;
+; Total coverage as a percentage                      ;      83.10 % ;
+; Total nodes checked                                 ; 62           ;
+; Total output ports checked                          ; 71           ;
+; Total output ports with complete 1/0-value coverage ; 59           ;
+; Total output ports with no 1/0-value coverage       ; 8            ;
+; Total output ports with no 1-value coverage         ; 8            ;
+; Total output ports with no 0-value coverage         ; 12           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                                                   ;
-+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                  ; Output Port Name                                                                                              ; Output Port Type ;
-+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[0] ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[0]               ; regout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[1] ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[1]               ; regout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[3] ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[3]               ; regout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[2] ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]               ; regout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0      ; sumout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0~COUT ; cout             ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[3]  ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[3]                ; regout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[2]  ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[2]                ; regout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[1]  ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[1]                ; regout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[0]  ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[0]                ; regout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0       ; sumout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0~COUT  ; cout             ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1       ; sumout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1~COUT  ; cout             ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2       ; sumout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2~COUT  ; cout             ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3       ; sumout           ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3    ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~COUT  ; cout             ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1      ; sumout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1~COUT ; cout             ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2      ; sumout           ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2~COUT ; cout             ;
-; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita3   ; |DCA_gen|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita3      ; sumout           ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]~0      ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]~0         ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]~0       ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]~0          ; combout          ;
-; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[3]          ; |DCA_gen|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[3]             ; combout          ;
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|cout_actual           ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|cout_actual              ; combout          ;
-; |DCA_gen|DCa[15]                                                                                           ; |DCA_gen|DCa[15]                                                                                              ; padio            ;
-; |DCA_gen|DCa[14]                                                                                           ; |DCA_gen|DCa[14]                                                                                              ; padio            ;
-; |DCA_gen|DCa[13]                                                                                           ; |DCA_gen|DCa[13]                                                                                              ; padio            ;
-; |DCA_gen|DCa[12]                                                                                           ; |DCA_gen|DCa[12]                                                                                              ; padio            ;
-; |DCA_gen|DCa[11]                                                                                           ; |DCA_gen|DCa[11]                                                                                              ; padio            ;
-; |DCA_gen|DCa[10]                                                                                           ; |DCA_gen|DCa[10]                                                                                              ; padio            ;
-; |DCA_gen|DCa[9]                                                                                            ; |DCA_gen|DCa[9]                                                                                               ; padio            ;
-; |DCA_gen|DCa[8]                                                                                            ; |DCA_gen|DCa[8]                                                                                               ; padio            ;
-; |DCA_gen|DCa[7]                                                                                            ; |DCA_gen|DCa[7]                                                                                               ; padio            ;
-; |DCA_gen|DCa[6]                                                                                            ; |DCA_gen|DCa[6]                                                                                               ; padio            ;
-; |DCA_gen|DCa[5]                                                                                            ; |DCA_gen|DCa[5]                                                                                               ; padio            ;
-; |DCA_gen|DCa[4]                                                                                            ; |DCA_gen|DCa[4]                                                                                               ; padio            ;
-; |DCA_gen|DCa[3]                                                                                            ; |DCA_gen|DCa[3]                                                                                               ; padio            ;
-; |DCA_gen|DCa[2]                                                                                            ; |DCA_gen|DCa[2]                                                                                               ; padio            ;
-; |DCA_gen|DCa[1]                                                                                            ; |DCA_gen|DCa[1]                                                                                               ; padio            ;
-; |DCA_gen|DCa[0]                                                                                            ; |DCA_gen|DCa[0]                                                                                               ; padio            ;
-; |DCA_gen|clk                                                                                               ; |DCA_gen|clk~corein                                                                                           ; combout          ;
-; |DCA_gen|clk~clkctrl                                                                                       ; |DCA_gen|clk~clkctrl                                                                                          ; outclk           ;
-+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                                     ;
++-------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                           ; Output Port Name                                                                                                                       ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[0]    ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[0]                  ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[1]    ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[1]                  ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[2]    ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]                  ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0      ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0         ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0      ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita0~COUT    ; cout             ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[3]     ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[3]                   ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[2]     ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[2]                   ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[1]     ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[1]                   ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_reg_bit1a[0]     ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[0]                   ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0          ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita0~COUT     ; cout             ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1          ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita1~COUT     ; cout             ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2          ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita2~COUT     ; cout             ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3          ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3       ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~COUT     ; cout             ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1      ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1         ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1      ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita1~COUT    ; cout             ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2      ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2         ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2      ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita2~COUT    ; cout             ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_reg_bit1a[1] ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[1]               ; regout           ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_reg_bit1a[0] ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[0]               ; regout           ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_reg_bit1a[2] ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[2]               ; regout           ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita0   ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita0      ; sumout           ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita0   ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita1   ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita1      ; sumout           ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita1   ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita2   ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|counter_comb_bita2      ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[3]~0         ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[3]~0            ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[3]~0         ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[3]~0            ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]~0         ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]~0            ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]~0          ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]~0             ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[3]             ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[3]                ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|cout_actual              ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|cout_actual                 ; combout          ;
+; |clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb                ; |clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb                   ; combout          ;
+; |clock_generator|DCa[14]                                                                                                            ; |clock_generator|DCa[14]                                                                                                               ; padio            ;
+; |clock_generator|DCa[11]                                                                                                            ; |clock_generator|DCa[11]                                                                                                               ; padio            ;
+; |clock_generator|DCa[9]                                                                                                             ; |clock_generator|DCa[9]                                                                                                                ; padio            ;
+; |clock_generator|DCa[8]                                                                                                             ; |clock_generator|DCa[8]                                                                                                                ; padio            ;
+; |clock_generator|DCa[7]                                                                                                             ; |clock_generator|DCa[7]                                                                                                                ; padio            ;
+; |clock_generator|DCa[6]                                                                                                             ; |clock_generator|DCa[6]                                                                                                                ; padio            ;
+; |clock_generator|DCa[5]                                                                                                             ; |clock_generator|DCa[5]                                                                                                                ; padio            ;
+; |clock_generator|DCa[4]                                                                                                             ; |clock_generator|DCa[4]                                                                                                                ; padio            ;
+; |clock_generator|DCa[3]                                                                                                             ; |clock_generator|DCa[3]                                                                                                                ; padio            ;
+; |clock_generator|DCa[2]                                                                                                             ; |clock_generator|DCa[2]                                                                                                                ; padio            ;
+; |clock_generator|DCa[1]                                                                                                             ; |clock_generator|DCa[1]                                                                                                                ; padio            ;
+; |clock_generator|DCa[0]                                                                                                             ; |clock_generator|DCa[0]                                                                                                                ; padio            ;
+; |clock_generator|clk                                                                                                                ; |clock_generator|clk~corein                                                                                                            ; combout          ;
+; |clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl        ; |clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl           ; outclk           ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[0]~feeder     ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[0]~feeder        ; combout          ;
+; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[2]~feeder     ; |clock_generator|single_pulse:inst|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_plh:auto_generated|safe_q[2]~feeder        ; combout          ;
++-------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                                                                 ;
-+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                 ; Output Port Name                                                                                          ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; sumout           ;
-; |DCA_gen|~GND                                                                                             ; |DCA_gen|~GND                                                                                             ; combout          ;
-+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                       ; Output Port Name                                                                                                                ; Output Port Type ;
++---------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]~0     ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]~0     ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]~0     ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]~0     ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]~0     ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]~0     ; combout          ;
+; |clock_generator|~GND                                                                                                           ; |clock_generator|~GND                                                                                                           ; combout          ;
+; |clock_generator|DCa[15]                                                                                                        ; |clock_generator|DCa[15]                                                                                                        ; padio            ;
+; |clock_generator|DCa[13]                                                                                                        ; |clock_generator|DCa[13]                                                                                                        ; padio            ;
+; |clock_generator|DCa[12]                                                                                                        ; |clock_generator|DCa[12]                                                                                                        ; padio            ;
++---------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                                                                 ;
-+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                 ; Output Port Name                                                                                          ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
-; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; |DCA_gen|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; sumout           ;
-; |DCA_gen|~GND                                                                                             ; |DCA_gen|~GND                                                                                             ; combout          ;
-+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                                              ;
++----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                        ; Output Port Name                                                                                                                ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_reg_bit1a[3] ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[3]           ; regout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1  ; |clock_generator|DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|counter_comb_bita3~1 ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita3   ; |clock_generator|DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|counter_comb_bita3  ; sumout           ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]~0      ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]~0     ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]~0      ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]~0     ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]~0      ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]~0     ; combout          ;
+; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]~0      ; |clock_generator|DCA_gen:inst6|lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]~0     ; combout          ;
+; |clock_generator|~GND                                                                                                            ; |clock_generator|~GND                                                                                                           ; combout          ;
+; |clock_generator|DCa[15]                                                                                                         ; |clock_generator|DCa[15]                                                                                                        ; padio            ;
+; |clock_generator|DCa[13]                                                                                                         ; |clock_generator|DCa[13]                                                                                                        ; padio            ;
+; |clock_generator|DCa[12]                                                                                                         ; |clock_generator|DCa[12]                                                                                                        ; padio            ;
+; |clock_generator|DCa[10]                                                                                                         ; |clock_generator|DCa[10]                                                                                                        ; padio            ;
++----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -207,9 +224,9 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Wed Apr 29 18:14:45 2026
+    Info: Processing started: Mon May 04 19:22:48 2026
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab2_var2_v1 -c lab2_var2_v1
-Info: Using vector source file "C:/Users/user/Desktop/labs/Laba 2/lab2_var2_v1.vwf"
+Info: Using vector source file "C:/Users/lapshet/Desktop/labs/Laba 4/lab4_var2_v1/lab2_var2_v1/clock_generator.vwf"
 Warning: Ignored node in vector source file. Can't find corresponding node name "out[15]" in design.
 Warning: Ignored node in vector source file. Can't find corresponding node name "out[14]" in design.
 Warning: Ignored node in vector source file. Can't find corresponding node name "out[13]" in design.
@@ -228,13 +245,63 @@ Warning: Ignored node in vector source file. Can't find corresponding node name 
 Warning: Ignored node in vector source file. Can't find corresponding node name "out[0]" in design.
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock high time violation at 91.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 1091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 1291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 1491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 1691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 1891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 2091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 2291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 2491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 2691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 2891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 3091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 3291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 3491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 3691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 3891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 4091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 4291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 4491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 4691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 4891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 5091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 5291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 5491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 5691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 5891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 6091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 6291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 6491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 6691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 6891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 7091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 7291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 7491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 7691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 7891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 8091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 8291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 8491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 8691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 8891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 9091.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 9291.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 9491.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 9691.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
+Warning: Found clock high time violation at 9891.73 ns on register "|clock_generator|single_pulse:inst|lpm_compare0:inst5|lpm_compare:lpm_compare_component|cmpr_obj:auto_generated|ageb~clkctrl_SIM_59_CE_DFF"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      96.67 %
-Info: Number of transitions in simulation is 5856
-Info: Quartus II Simulator was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 169 megabytes
-    Info: Processing ended: Wed Apr 29 18:14:45 2026
+Info: Simulation coverage is      83.10 %
+Info: Number of transitions in simulation is 5959
+Info: Quartus II Simulator was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 170 megabytes
+    Info: Processing ended: Mon May 04 19:22:48 2026
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

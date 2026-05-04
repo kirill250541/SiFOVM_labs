@@ -5,29 +5,29 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.093 ns
-From           : lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[1]
-To             : DCa[2]
+Actual Time    : 11.808 ns
+From           : DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[0]
+To             : DCa[12]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk'
-Slack          : 22.755 ns
+Slack          : 22.350 ns
 Required Time  : 40.00 MHz ( period = 25.000 ns )
-Actual Time    : 445.43 MHz ( period = 2.245 ns )
-From           : lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[0]
-To             : lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]
+Actual Time    : 377.36 MHz ( period = 2.650 ns )
+From           : DCA_gen:inst6|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_4gj:auto_generated|safe_q[0]
+To             : DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
 
 Type           : Clock Hold: 'clk'
-Slack          : 0.554 ns
+Slack          : 0.297 ns
 Required Time  : 40.00 MHz ( period = 25.000 ns )
 Actual Time    : N/A
-From           : lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]
-To             : lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]
+From           : DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]
+To             : DCA_gen:inst6|lpm_counter1:inst3|lpm_counter:lpm_counter_component|cntr_6ai:auto_generated|safe_q[2]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
