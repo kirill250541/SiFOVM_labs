@@ -2,9 +2,9 @@
 <LOG_ROOT>
 	<PROJECT NAME="laba7_var1">
 		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_1:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_a9l.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_2:inst12|lpm_counter2:inst11|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_33k.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_3:inst13|lpm_counter3:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_83k.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_4:inst14|lpm_counter0:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_23k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_2:inst1|lpm_counter1:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_a9l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_3:inst2|lpm_counter1:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_a9l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|master_block_4:inst3|lpm_counter1:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_a9l.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|laba7_var1|slave_block_1:inst4|lpm_counter4:inst15|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_4hk.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

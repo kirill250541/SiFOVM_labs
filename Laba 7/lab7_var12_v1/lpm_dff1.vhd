@@ -45,7 +45,6 @@ ENTITY lpm_dff1 IS
 		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC ;
-		enable		: IN STD_LOGIC ;
 		q		: OUT STD_LOGIC 
 	);
 END lpm_dff1;
@@ -67,7 +66,6 @@ ARCHITECTURE SYN OF lpm_dff1 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			enable	: IN STD_LOGIC ;
 			aclr	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (0 DOWNTO 0);
@@ -88,7 +86,6 @@ BEGIN
 		lpm_width => 1
 	)
 	PORT MAP (
-		enable => enable,
 		aclr => aclr,
 		clock => clock,
 		data => sub_wire3,
@@ -106,7 +103,7 @@ END SYN;
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -122,11 +119,9 @@ END SYN;
 -- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: data 0 0 0 0 INPUT NODEFVAL data
--- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 -- Retrieval info: USED_PORT: q 0 0 0 0 OUTPUT NODEFVAL q
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 0 0 @q 0 0 1 0
--- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 -- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 -- Retrieval info: CONNECT: @data 0 0 1 0 data 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all

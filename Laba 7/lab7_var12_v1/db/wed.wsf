@@ -1697,9 +1697,9 @@ VECTOR("C:/Users/lapshet/Desktop/labs/Laba 7/lab7_var12_v1/db/laba7_var1.sim.cvw
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 625000;
-		NUMERATOR = 1361;
-		DENOMINATOR = 625000;
+		ZEND = 2500000;
+		NUMERATOR = 1312;
+		DENOMINATOR = 2500000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{

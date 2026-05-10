@@ -16,7 +16,7 @@
 <TH>Output only Bidir</TH>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst17|inst2|sram|ram_block|auto_generated</TD>
+<TD ALIGN="LEFT">inst|inst2|sram|ram_block|auto_generated</TD>
 <TD ALIGN="LEFT">14</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -32,7 +32,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst17|inst|altsyncram_component|auto_generated</TD>
+<TD ALIGN="LEFT">inst|inst|altsyncram_component|auto_generated</TD>
 <TD ALIGN="LEFT">5</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -48,7 +48,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst17|inst</TD>
+<TD ALIGN="LEFT">inst|inst</TD>
 <TD ALIGN="LEFT">5</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -64,7 +64,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst17|inst1</TD>
+<TD ALIGN="LEFT">inst|inst1</TD>
 <TD ALIGN="LEFT">9</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -80,15 +80,15 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst17</TD>
+<TD ALIGN="LEFT">inst</TD>
 <TD ALIGN="LEFT">8</TD>
-<TD ALIGN="LEFT">11</TD>
+<TD ALIGN="LEFT">3</TD>
 <TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">11</TD>
-<TD ALIGN="LEFT">24</TD>
-<TD ALIGN="LEFT">11</TD>
-<TD ALIGN="LEFT">11</TD>
-<TD ALIGN="LEFT">11</TD>
+<TD ALIGN="LEFT">3</TD>
+<TD ALIGN="LEFT">16</TD>
+<TD ALIGN="LEFT">3</TD>
+<TD ALIGN="LEFT">3</TD>
+<TD ALIGN="LEFT">3</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -352,7 +352,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|DR</TD>
+<TD ALIGN="LEFT">inst5|DR</TD>
 <TD ALIGN="LEFT">10</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -368,7 +368,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|AR</TD>
+<TD ALIGN="LEFT">inst5|AR</TD>
 <TD ALIGN="LEFT">6</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -384,7 +384,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|inst|lpm_add_sub_component|auto_generated</TD>
+<TD ALIGN="LEFT">inst5|inst|lpm_add_sub_component|auto_generated</TD>
 <TD ALIGN="LEFT">8</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -400,7 +400,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|inst</TD>
+<TD ALIGN="LEFT">inst5|inst</TD>
 <TD ALIGN="LEFT">8</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -416,7 +416,55 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|flag_Z</TD>
+<TD ALIGN="LEFT">inst5|FR</TD>
+<TD ALIGN="LEFT">6</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">4</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">inst5|IP|lpm_counter_component|auto_generated</TD>
+<TD ALIGN="LEFT">7</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">4</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">inst5|IP</TD>
+<TD ALIGN="LEFT">7</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">4</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">inst5|inst10</TD>
 <TD ALIGN="LEFT">2</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -432,39 +480,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|IP|lpm_counter_component|auto_generated</TD>
-<TD ALIGN="LEFT">7</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">4</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-</TR>
-<TR valign="middle">
-<TD ALIGN="LEFT">inst|IP</TD>
-<TD ALIGN="LEFT">7</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">4</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-<TD ALIGN="LEFT">0</TD>
-</TR>
-<TR valign="middle">
-<TD ALIGN="LEFT">inst|IR</TD>
+<TD ALIGN="LEFT">inst5|IR</TD>
 <TD ALIGN="LEFT">10</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -480,7 +496,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|inst8|lpm_decode_component|auto_generated</TD>
+<TD ALIGN="LEFT">inst5|inst8|lpm_decode_component|auto_generated</TD>
 <TD ALIGN="LEFT">2</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -496,7 +512,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|inst8</TD>
+<TD ALIGN="LEFT">inst5|inst8</TD>
 <TD ALIGN="LEFT">2</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -512,7 +528,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|inst17|lpm_mux_component|auto_generated</TD>
+<TD ALIGN="LEFT">inst5|inst17|lpm_mux_component|auto_generated</TD>
 <TD ALIGN="LEFT">9</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -528,7 +544,7 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst|inst17</TD>
+<TD ALIGN="LEFT">inst5|inst17</TD>
 <TD ALIGN="LEFT">9</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
@@ -544,8 +560,8 @@
 <TD ALIGN="LEFT">0</TD>
 </TR>
 <TR valign="middle">
-<TD ALIGN="LEFT">inst</TD>
-<TD ALIGN="LEFT">13</TD>
+<TD ALIGN="LEFT">inst5</TD>
+<TD ALIGN="LEFT">14</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
 <TD ALIGN="LEFT">0</TD>
