@@ -199,40 +199,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 632 368 792 448)
-	(text "lpm_rom0" (rect 52 1 119 17)(font "Arial" (font_size 10)))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "address[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "address[3..0]" (rect 20 26 95 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 26 42 55 56)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 160 40)
-		(output)
-		(text "q[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "q[7..0]" (rect 111 34 146 48)(font "Arial" (font_size 8)))
-		(line (pt 160 40)(pt 144 40)(line_width 3))
-	)
-	(drawing
-		(line (pt 16 16)(pt 144 16)(line_width 1))
-		(line (pt 144 16)(pt 144 64)(line_width 1))
-		(line (pt 144 64)(pt 16 64)(line_width 1))
-		(line (pt 16 64)(pt 16 16)(line_width 1))
-		(line (pt 16 42)(pt 22 48)(line_width 1))
-		(line (pt 22 48)(pt 16 54)(line_width 1))
-	)
-)
-(symbol
 	(rect 632 560 760 688)
 	(text "LPM_RAM_IO" (rect 25 0 122 16)(font "Arial" (font_size 10)))
 	(text "inst2" (rect 3 117 30 131)(font "Arial" (font_size 8)))
@@ -293,7 +259,7 @@ applicable agreement for further details.
 		(type "PARAMETER_STRING")	)
 	(parameter
 		"LPM_FILE"
-		"ram_var7.hex"
+		"ram_var2.hex"
 		"File containing initial contents of memory array"
 	)
 	(parameter
@@ -332,6 +298,46 @@ applicable agreement for further details.
 		(line (pt 16 112)(pt 16 16)(line_width 1))
 	)
 	(annotation_block (parameter)(rect 632 688 880 800))
+)
+(symbol
+	(rect 632 368 792 448)
+	(text "lpm_rom0" (rect 52 1 119 17)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "address[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "address[3..0]" (rect 20 26 95 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 26 42 55 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 160 40)
+		(output)
+		(text "q[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 111 34 146 48)(font "Arial" (font_size 8)))
+		(line (pt 160 40)(pt 144 40)(line_width 3))
+	)
+	(parameter
+		"LPM_FILE"
+		"rom_var2.hex"
+		""
+	)
+	(drawing
+		(line (pt 16 16)(pt 144 16)(line_width 1))
+		(line (pt 144 16)(pt 144 64)(line_width 1))
+		(line (pt 144 64)(pt 16 64)(line_width 1))
+		(line (pt 16 64)(pt 16 16)(line_width 1))
+		(line (pt 16 42)(pt 22 48)(line_width 1))
+		(line (pt 22 48)(pt 16 54)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 792 336 936 368))
 )
 (connector
 	(pt 808 480)

@@ -62,17 +62,11 @@ set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE control_unit.vwf
 set_global_assignment -name QIP_FILE lpm_mux2.qip
 set_global_assignment -name HEX_FILE lab3_var7_v1/ram_var7.hex
-set_global_assignment -name END_TIME "5 us"
+set_global_assignment -name END_TIME "1 us"
 set_global_assignment -name QIP_FILE lpm_ff4.qip
 set_global_assignment -name QIP_FILE lab3_var7_v1/lpm_dff0.qip
 set_global_assignment -name QIP_FILE lpm_dff2.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE lab4_var2_v1.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE ip_unit.bdf
 set_global_assignment -name QIP_FILE lpm_add_sub1.qip
 set_global_assignment -name QIP_FILE lpm_mux3.qip
@@ -85,3 +79,27 @@ set_global_assignment -name BDF_FILE ir_unit.bdf
 set_global_assignment -name BDF_FILE ron_unit.bdf
 set_global_assignment -name QIP_FILE lpm_decode2.qip
 set_global_assignment -name BDF_FILE fr_unit.bdf
+set_global_assignment -name QIP_FILE lpm_compare1.qip
+set_global_assignment -name QIP_FILE lpm_compare2.qip
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_dff3.qip
+set_global_assignment -name QIP_FILE lpm_counter4.qip
+set_global_assignment -name QIP_FILE lpm_ff7.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name QIP_FILE lpm_add_sub3.qip
+set_global_assignment -name QIP_FILE lpm_add_sub4.qip
+set_global_assignment -name QIP_FILE lpm_mux4.qip
+set_global_assignment -name QIP_FILE lpm_dff4.qip
+set_global_assignment -name QIP_FILE lpm_and0.qip
+set_global_assignment -name QIP_FILE lpm_mux5.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../../../control_unit.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name QIP_FILE lpm_ff8.qip
+set_global_assignment -name QIP_FILE lpm_mux6.qip
+set_global_assignment -name MIF_FILE rom_var2.mif
+set_global_assignment -name MIF_FILE ram_var2.mif
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE lab4_var2_v1.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
