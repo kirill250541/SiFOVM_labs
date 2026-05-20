@@ -1,264 +1,64 @@
-|lab5_var4_v1
-ZF <= arithmetic_logic_unit:inst.ZF
-clk => arithmetic_logic_unit:inst.clk
-A[0] => arithmetic_logic_unit:inst.A[0]
-A[1] => arithmetic_logic_unit:inst.A[1]
-A[2] => arithmetic_logic_unit:inst.A[2]
-A[3] => arithmetic_logic_unit:inst.A[3]
-A[4] => arithmetic_logic_unit:inst.A[4]
-A[5] => arithmetic_logic_unit:inst.A[5]
-A[6] => arithmetic_logic_unit:inst.A[6]
-A[7] => arithmetic_logic_unit:inst.A[7]
-ALU_OP[0] => arithmetic_logic_unit:inst.ALU_OP[0]
-ALU_OP[1] => arithmetic_logic_unit:inst.ALU_OP[1]
-B[0] => arithmetic_logic_unit:inst.B[0]
-B[1] => arithmetic_logic_unit:inst.B[1]
-B[2] => arithmetic_logic_unit:inst.B[2]
-B[3] => arithmetic_logic_unit:inst.B[3]
-B[4] => arithmetic_logic_unit:inst.B[4]
-B[5] => arithmetic_logic_unit:inst.B[5]
-B[6] => arithmetic_logic_unit:inst.B[6]
-B[7] => arithmetic_logic_unit:inst.B[7]
-NF <= arithmetic_logic_unit:inst.NF
-CF <= arithmetic_logic_unit:inst.CF
-ALU_out[0] <= arithmetic_logic_unit:inst.ALU_out[0]
-ALU_out[1] <= arithmetic_logic_unit:inst.ALU_out[1]
-ALU_out[2] <= arithmetic_logic_unit:inst.ALU_out[2]
-ALU_out[3] <= arithmetic_logic_unit:inst.ALU_out[3]
-ALU_out[4] <= arithmetic_logic_unit:inst.ALU_out[4]
-ALU_out[5] <= arithmetic_logic_unit:inst.ALU_out[5]
-ALU_out[6] <= arithmetic_logic_unit:inst.ALU_out[6]
-ALU_out[7] <= arithmetic_logic_unit:inst.ALU_out[7]
+|arithmetic_logic_unit
+ALU_out[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[1] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[2] <= result[2].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[3] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[4] <= result[4].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[5] <= result[5].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[6] <= result[6].DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[7] <= result[7].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => shift_right_arithmetic:inst8.A[0]
+A[0] => logic_NOR:inst7.A[0]
+A[0] => CMP:inst12.A[0]
+A[0] => lpm_mux3:inst13.data1
+A[1] => shift_right_arithmetic:inst8.A[1]
+A[1] => logic_NOR:inst7.A[1]
+A[1] => CMP:inst12.A[1]
+A[2] => shift_right_arithmetic:inst8.A[2]
+A[2] => logic_NOR:inst7.A[2]
+A[2] => CMP:inst12.A[2]
+A[3] => shift_right_arithmetic:inst8.A[3]
+A[3] => logic_NOR:inst7.A[3]
+A[3] => CMP:inst12.A[3]
+A[4] => shift_right_arithmetic:inst8.A[4]
+A[4] => logic_NOR:inst7.A[4]
+A[4] => CMP:inst12.A[4]
+A[5] => shift_right_arithmetic:inst8.A[5]
+A[5] => logic_NOR:inst7.A[5]
+A[5] => CMP:inst12.A[5]
+A[6] => shift_right_arithmetic:inst8.A[6]
+A[6] => logic_NOR:inst7.A[6]
+A[6] => CMP:inst12.A[6]
+A[7] => shift_right_arithmetic:inst8.A[7]
+A[7] => logic_NOR:inst7.A[7]
+A[7] => CMP:inst12.A[7]
+B[0] => logic_NOR:inst7.B[0]
+B[0] => CMP:inst12.B[0]
+B[1] => logic_NOR:inst7.B[1]
+B[1] => CMP:inst12.B[1]
+B[2] => logic_NOR:inst7.B[2]
+B[2] => CMP:inst12.B[2]
+B[3] => logic_NOR:inst7.B[3]
+B[3] => CMP:inst12.B[3]
+B[4] => logic_NOR:inst7.B[4]
+B[4] => CMP:inst12.B[4]
+B[5] => logic_NOR:inst7.B[5]
+B[5] => CMP:inst12.B[5]
+B[6] => logic_NOR:inst7.B[6]
+B[6] => CMP:inst12.B[6]
+B[7] => logic_NOR:inst7.B[7]
+B[7] => CMP:inst12.B[7]
+ALU_OP[0] => lpm_mux2:inst.sel[0]
+ALU_OP[0] => lpm_mux3:inst13.sel[0]
+ALU_OP[1] => lpm_mux2:inst.sel[1]
+ALU_OP[1] => lpm_mux3:inst13.sel[1]
+flags_out[0] <= flags[0].DB_MAX_OUTPUT_PORT_TYPE
+flags_out[1] <= result[7].DB_MAX_OUTPUT_PORT_TYPE
+flags_out[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+flags_out[3] <= 0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab5_var4_v1|arithmetic_logic_unit:inst
-ZF <= CMP:inst2.ZF
-clk => CMP:inst2.CLK
-A[0] => CMP:inst2.A[0]
-A[0] => shift_right_arithmetic:inst1.A[0]
-A[0] => logic_NOR:inst.A[0]
-A[1] => CMP:inst2.A[1]
-A[1] => shift_right_arithmetic:inst1.A[1]
-A[1] => logic_NOR:inst.A[1]
-A[2] => CMP:inst2.A[2]
-A[2] => shift_right_arithmetic:inst1.A[2]
-A[2] => logic_NOR:inst.A[2]
-A[3] => CMP:inst2.A[3]
-A[3] => shift_right_arithmetic:inst1.A[3]
-A[3] => logic_NOR:inst.A[3]
-A[4] => CMP:inst2.A[4]
-A[4] => shift_right_arithmetic:inst1.A[4]
-A[4] => logic_NOR:inst.A[4]
-A[5] => CMP:inst2.A[5]
-A[5] => shift_right_arithmetic:inst1.A[5]
-A[5] => logic_NOR:inst.A[5]
-A[6] => CMP:inst2.A[6]
-A[6] => shift_right_arithmetic:inst1.A[6]
-A[6] => logic_NOR:inst.A[6]
-A[7] => CMP:inst2.A[7]
-A[7] => shift_right_arithmetic:inst1.A[7]
-A[7] => logic_NOR:inst.A[7]
-B[0] => CMP:inst2.B[0]
-B[0] => logic_NOR:inst.B[0]
-B[1] => CMP:inst2.B[1]
-B[1] => logic_NOR:inst.B[1]
-B[2] => CMP:inst2.B[2]
-B[2] => logic_NOR:inst.B[2]
-B[3] => CMP:inst2.B[3]
-B[3] => logic_NOR:inst.B[3]
-B[4] => CMP:inst2.B[4]
-B[4] => logic_NOR:inst.B[4]
-B[5] => CMP:inst2.B[5]
-B[5] => logic_NOR:inst.B[5]
-B[6] => CMP:inst2.B[6]
-B[6] => logic_NOR:inst.B[6]
-B[7] => CMP:inst2.B[7]
-B[7] => logic_NOR:inst.B[7]
-NF <= CMP:inst2.NF
-CF <= CMP:inst2.CF
-ALU_out[0] <= lpm_mux1:inst29.result[0]
-ALU_out[1] <= lpm_mux1:inst29.result[1]
-ALU_out[2] <= lpm_mux1:inst29.result[2]
-ALU_out[3] <= lpm_mux1:inst29.result[3]
-ALU_out[4] <= lpm_mux1:inst29.result[4]
-ALU_out[5] <= lpm_mux1:inst29.result[5]
-ALU_out[6] <= lpm_mux1:inst29.result[6]
-ALU_out[7] <= lpm_mux1:inst29.result[7]
-ALU_OP[0] => lpm_mux1:inst29.sel[0]
-ALU_OP[1] => lpm_mux1:inst29.sel[1]
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2
-ZF <= lpm_dff0:inst2.q
-A[0] => fulladd:inst8.A
-A[1] => fulladd:inst9.A
-A[2] => fulladd:inst10.A
-A[3] => fulladd:inst11.A
-A[4] => fulladd:inst12.A
-A[5] => fulladd:inst13.A
-A[6] => fulladd:inst14.A
-A[7] => fulladd:inst15.A
-B[0] => inst19.IN0
-B[1] => inst20.IN0
-B[2] => inst21.IN0
-B[3] => inst23.IN0
-B[4] => inst24.IN0
-B[5] => inst25.IN0
-B[6] => inst26.IN0
-B[7] => inst27.IN0
-CLK => lpm_dff0:inst2.clock
-CLK => lpm_dff0:inst1.clock
-CLK => lpm_dff0:inst.clock
-NF <= lpm_dff0:inst1.q
-CF <= lpm_dff0:inst.q
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst2
-clock => lpm_ff:lpm_ff_component.clock
-data => lpm_ff:lpm_ff_component.data[0]
-q <= lpm_ff:lpm_ff_component.q[0]
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst2|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-clock => dffs[0].CLK
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst8
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst10
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst9
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst11
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst12
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst14
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst15
-S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst28.IN0
-B => inst.IN1
-B => inst28.IN1
-C => inst27.IN1
-C => inst29.IN1
-count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst1
-clock => lpm_ff:lpm_ff_component.clock
-data => lpm_ff:lpm_ff_component.data[0]
-q <= lpm_ff:lpm_ff_component.q[0]
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst1|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-clock => dffs[0].CLK
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst
-clock => lpm_ff:lpm_ff_component.clock
-data => lpm_ff:lpm_ff_component.data[0]
-q <= lpm_ff:lpm_ff_component.q[0]
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-clock => dffs[0].CLK
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29
+|arithmetic_logic_unit|lpm_mux2:inst
 data0x[0] => LPM_MUX:lpm_mux_component.DATA[0][0]
 data0x[1] => LPM_MUX:lpm_mux_component.DATA[0][1]
 data0x[2] => LPM_MUX:lpm_mux_component.DATA[0][2]
@@ -303,7 +103,7 @@ result[6] <= LPM_MUX:lpm_mux_component.RESULT[6]
 result[7] <= LPM_MUX:lpm_mux_component.RESULT[7]
 
 
-|lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|LPM_MUX:lpm_mux_component
+|arithmetic_logic_unit|lpm_mux2:inst|LPM_MUX:lpm_mux_component
 data[0][0] => mux_c4e:auto_generated.data[0]
 data[0][1] => mux_c4e:auto_generated.data[1]
 data[0][2] => mux_c4e:auto_generated.data[2]
@@ -351,7 +151,7 @@ result[6] <= mux_c4e:auto_generated.result[6]
 result[7] <= mux_c4e:auto_generated.result[7]
 
 
-|lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|LPM_MUX:lpm_mux_component|mux_c4e:auto_generated
+|arithmetic_logic_unit|lpm_mux2:inst|LPM_MUX:lpm_mux_component|mux_c4e:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -442,7 +242,7 @@ sel[1] => l2_w7_n0_mux_dataout.IN0
 sel[1] => _.IN0
 
 
-|lab5_var4_v1|arithmetic_logic_unit:inst|shift_right_arithmetic:inst1
+|arithmetic_logic_unit|shift_right_arithmetic:inst8
 SRA_out[0] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 SRA_out[1] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
 SRA_out[2] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -462,7 +262,7 @@ A[7] => SRA_out[7].DATAIN
 A[7] => SRA_out[6].DATAIN
 
 
-|lab5_var4_v1|arithmetic_logic_unit:inst|logic_NOR:inst
+|arithmetic_logic_unit|logic_NOR:inst7
 NOR_out[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 NOR_out[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 NOR_out[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -487,5 +287,166 @@ A[4] => inst4.IN1
 A[5] => inst5.IN1
 A[6] => inst6.IN1
 A[7] => inst7.IN1
+
+
+|arithmetic_logic_unit|CMP:inst12
+sub_carry <= fulladd:7.count
+A[0] => fulladd:7.A
+A[1] => fulladd:6.A
+A[2] => fulladd:5.A
+A[3] => fulladd:4.A
+A[4] => fulladd:3.A
+A[5] => fulladd:2.A
+A[6] => fulladd:1.A
+A[7] => fulladd:0.A
+B[0] => inst19.IN0
+B[1] => inst20.IN0
+B[2] => inst21.IN0
+B[3] => inst23.IN0
+B[4] => inst24.IN0
+B[5] => inst25.IN0
+B[6] => inst26.IN0
+B[7] => inst27.IN0
+S[0] <= fulladd:0.S
+S[1] <= fulladd:1.S
+S[2] <= fulladd:2.S
+S[3] <= fulladd:3.S
+S[4] <= fulladd:4.S
+S[5] <= fulladd:5.S
+S[6] <= fulladd:6.S
+S[7] <= fulladd:7.S
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:7
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:6
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:5
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:4
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:3
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:2
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:1
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|CMP:inst12|fulladd:0
+S <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst28.IN0
+B => inst.IN1
+B => inst28.IN1
+C => inst27.IN1
+C => inst29.IN1
+count <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_logic_unit|lpm_constant2:inst2
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+
+
+|arithmetic_logic_unit|lpm_constant2:inst2|lpm_constant:lpm_constant_component
+result[0] <= <GND>
+
+
+|arithmetic_logic_unit|lpm_mux3:inst13
+data0 => LPM_MUX:lpm_mux_component.DATA[0][0]
+data1 => LPM_MUX:lpm_mux_component.DATA[1][0]
+data2 => LPM_MUX:lpm_mux_component.DATA[2][0]
+data3 => LPM_MUX:lpm_mux_component.DATA[3][0]
+sel[0] => LPM_MUX:lpm_mux_component.SEL[0]
+sel[1] => LPM_MUX:lpm_mux_component.SEL[1]
+result <= LPM_MUX:lpm_mux_component.RESULT[0]
+
+
+|arithmetic_logic_unit|lpm_mux3:inst13|LPM_MUX:lpm_mux_component
+data[0][0] => mux_54e:auto_generated.data[0]
+data[1][0] => mux_54e:auto_generated.data[1]
+data[2][0] => mux_54e:auto_generated.data[2]
+data[3][0] => mux_54e:auto_generated.data[3]
+sel[0] => mux_54e:auto_generated.sel[0]
+sel[1] => mux_54e:auto_generated.sel[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_54e:auto_generated.result[0]
+
+
+|arithmetic_logic_unit|lpm_mux3:inst13|LPM_MUX:lpm_mux_component|mux_54e:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w0_n0_mux_dataout.IN1
+data[2] => l1_w0_n1_mux_dataout.IN1
+data[3] => l1_w0_n1_mux_dataout.IN1
+result[0] <= l2_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+sel[0] => l1_w0_n1_mux_dataout.IN0
+sel[0] => _.IN0
+sel[1] => l2_w0_n0_mux_dataout.IN0
+sel[1] => _.IN0
 
 

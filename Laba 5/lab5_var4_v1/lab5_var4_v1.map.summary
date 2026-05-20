@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon May 04 20:33:03 2026
+Analysis & Synthesis Status : Successful - Mon May 18 13:46:18 2026
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : lab5_var4_v1
-Top-level Entity Name : lab5_var4_v1
+Top-level Entity Name : arithmetic_logic_unit
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 19
-    Dedicated logic registers : 3
-Total registers : 3
+    Combinational ALUTs : 30
+    Dedicated logic registers : 0
+Total registers : 0
 Total pins : 30
 Total virtual pins : 0
 Total block memory bits : 0

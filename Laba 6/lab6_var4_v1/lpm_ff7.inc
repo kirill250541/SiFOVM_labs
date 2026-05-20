@@ -15,11 +15,12 @@
 
 FUNCTION lpm_ff7 
 (
+	aclr,
 	clock,
-	data[15..0],
+	data[7..0],
 	enable
 )
 
 RETURNS (
-	q[15..0]
+	q[7..0]
 );

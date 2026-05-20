@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="lab5_var4_v1">
-		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_c4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arithmetic_logic_unit|lpm_constant2:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arithmetic_logic_unit|lpm_mux2:inst|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_c4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arithmetic_logic_unit|lpm_mux3:inst13|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

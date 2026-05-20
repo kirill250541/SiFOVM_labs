@@ -148,6 +148,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 1464 600 1640 616)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "flags_out[3..0]" (rect 90 0 161 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 1160 608 1304 704)
 	(text "lpm_ff5" (rect 52 1 100 17)(font "Arial" (font_size 10)))
@@ -262,11 +278,6 @@ applicable agreement for further details.
 	(pt 1440 712)
 )
 (connector
-	(pt 1368 648)
-	(pt 1368 664)
-	(bus)
-)
-(connector
 	(pt 1368 664)
 	(pt 1368 680)
 	(bus)
@@ -294,6 +305,22 @@ applicable agreement for further details.
 	(pt 1160 736)
 	(pt 1144 736)
 )
+(connector
+	(pt 1368 608)
+	(pt 1368 648)
+	(bus)
+)
+(connector
+	(pt 1368 648)
+	(pt 1368 664)
+	(bus)
+)
+(connector
+	(pt 1368 608)
+	(pt 1464 608)
+	(bus)
+)
 (junction (pt 1368 664))
 (junction (pt 1368 680))
 (junction (pt 1368 696))
+(junction (pt 1368 648))

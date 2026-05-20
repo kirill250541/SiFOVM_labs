@@ -38,11 +38,68 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY lab5_var4_v1
+set_global_assignment -name TOP_LEVEL_ENTITY arithmetic_logic_unit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:05:18  APRIL 29, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE arithmetic_logic_unit.vwf
+set_global_assignment -name BDF_FILE lab4_var2_v1.bdf
+set_global_assignment -name BDF_FILE ar_unit.bdf
+set_global_assignment -name BDF_FILE clock_generator.bdf
+set_global_assignment -name BDF_FILE control_unit.bdf
+set_global_assignment -name BDF_FILE DCA_gen.bdf
+set_global_assignment -name BDF_FILE dr_unit.bdf
+set_global_assignment -name BDF_FILE fr_unit.bdf
+set_global_assignment -name BDF_FILE ip_unit.bdf
+set_global_assignment -name BDF_FILE ir_unit.bdf
+set_global_assignment -name VHDL_FILE lpm_add_sub0.vhd
+set_global_assignment -name VHDL_FILE lpm_add_sub1.vhd
+set_global_assignment -name VHDL_FILE lpm_add_sub2.vhd
+set_global_assignment -name VHDL_FILE lpm_add_sub3.vhd
+set_global_assignment -name VHDL_FILE lpm_add_sub4.vhd
+set_global_assignment -name VHDL_FILE lpm_add_sub5.vhd
+set_global_assignment -name VHDL_FILE lpm_and0.vhd
+set_global_assignment -name VHDL_FILE lpm_compare1.vhd
+set_global_assignment -name VHDL_FILE lpm_compare2.vhd
+set_global_assignment -name VHDL_FILE lpm_constant1.vhd
+set_global_assignment -name AHDL_FILE lpm_counter0.tdf
+set_global_assignment -name VHDL_FILE lpm_counter1.vhd
+set_global_assignment -name VHDL_FILE lpm_counter2.vhd
+set_global_assignment -name VHDL_FILE lpm_counter3.vhd
+set_global_assignment -name VHDL_FILE lpm_counter4.vhd
+set_global_assignment -name VHDL_FILE lpm_decode0.vhd
+set_global_assignment -name VHDL_FILE lpm_decode1.vhd
+set_global_assignment -name VHDL_FILE lpm_decode2.vhd
+set_global_assignment -name AHDL_FILE lpm_dff0.tdf
+set_global_assignment -name VHDL_FILE lpm_dff0.vhd
+set_global_assignment -name AHDL_FILE lpm_dff1.tdf
+set_global_assignment -name VHDL_FILE lpm_dff2.vhd
+set_global_assignment -name VHDL_FILE lpm_dff3.vhd
+set_global_assignment -name VHDL_FILE lpm_dff4.vhd
+set_global_assignment -name VHDL_FILE lpm_ff0.vhd
+set_global_assignment -name VHDL_FILE lpm_ff1.vhd
+set_global_assignment -name VHDL_FILE lpm_ff2.vhd
+set_global_assignment -name VHDL_FILE lpm_ff3.vhd
+set_global_assignment -name VHDL_FILE lpm_ff4.vhd
+set_global_assignment -name VHDL_FILE lpm_ff5.vhd
+set_global_assignment -name VHDL_FILE lpm_ff6.vhd
+set_global_assignment -name VHDL_FILE lpm_ff7.vhd
+set_global_assignment -name VHDL_FILE lpm_ff8.vhd
+set_global_assignment -name VHDL_FILE lpm_mux4.vhd
+set_global_assignment -name VHDL_FILE lpm_mux5.vhd
+set_global_assignment -name VHDL_FILE lpm_mux6.vhd
+set_global_assignment -name AHDL_FILE lpm_rom0.tdf
+set_global_assignment -name BDF_FILE rom_ram_interface.bdf
+set_global_assignment -name BDF_FILE ron_unit.bdf
+set_global_assignment -name BDF_FILE single_pulse.bdf
+set_global_assignment -name VHDL_FILE lpm_inv0.vhd
+set_global_assignment -name BDF_FILE lab4_var2_v1/lab4_var2_v1.bdf
 set_global_assignment -name BDF_FILE lab5_var4_v1.bdf
 set_global_assignment -name BDF_FILE fulladd.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE fulladd.vwf
@@ -54,7 +111,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE shift_right_arithmetic.vwf
 set_global_assignment -name BDF_FILE CMP.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CMD.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CMP.vwf
-set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name QIP_FILE lpm_dff0.qip
 set_global_assignment -name BDF_FILE NOR.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE NOR.vwf
@@ -62,9 +118,11 @@ set_global_assignment -name BDF_FILE logic_NOR.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE logic_NOR.vwf
 set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE lab5_var4_v1.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE lab5_var4_v1.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_compare0.qip
+set_global_assignment -name QIP_FILE lpm_dff1.qip
+set_global_assignment -name QIP_FILE lpm_mux3.qip
+set_global_assignment -name QIP_FILE lpm_constant2.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name QIP_FILE lpm_mux7.qip

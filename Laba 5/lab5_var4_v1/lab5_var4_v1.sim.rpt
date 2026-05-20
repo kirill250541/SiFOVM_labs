@@ -1,5 +1,5 @@
 Simulator report for lab5_var4_v1
-Mon May 04 20:33:11 2026
+Mon May 18 13:46:26 2026
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -45,42 +45,42 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 53 nodes     ;
-; Simulation Coverage         ;      67.92 % ;
-; Total Number of Transitions ; 569          ;
+; Simulation Netlist Size     ; 60 nodes     ;
+; Simulation Coverage         ;      81.67 % ;
+; Total Number of Transitions ; 382          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 ; Device                      ; EP2S15F484C3 ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                            ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
-; Option                                                                                     ; Setting          ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
-; Simulation mode                                                                            ; Timing           ; Timing        ;
-; Start time                                                                                 ; 0 ns             ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF             ;               ;
-; Vector input source                                                                        ; lab5_var4_v1.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
-; Check outputs                                                                              ; Off              ; Off           ;
-; Report simulation coverage                                                                 ; On               ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
-; Display missing 1-value coverage report                                                    ; On               ; On            ;
-; Display missing 0-value coverage report                                                    ; On               ; On            ;
-; Detect setup and hold time violations                                                      ; Off              ; Off           ;
-; Detect glitches                                                                            ; Off              ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
-; Generate Signal Activity File                                                              ; Off              ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
-; Group bus channels in simulation results                                                   ; Off              ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off              ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                     ;
++--------------------------------------------------------------------------------------------+---------------------------+---------------+
+; Option                                                                                     ; Setting                   ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------+---------------+
+; Simulation mode                                                                            ; Timing                    ; Timing        ;
+; Start time                                                                                 ; 0 ns                      ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                      ;               ;
+; Vector input source                                                                        ; arithmetic_logic_unit.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                        ; On            ;
+; Check outputs                                                                              ; Off                       ; Off           ;
+; Report simulation coverage                                                                 ; On                        ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                        ; On            ;
+; Display missing 1-value coverage report                                                    ; On                        ; On            ;
+; Display missing 0-value coverage report                                                    ; On                        ; On            ;
+; Detect setup and hold time violations                                                      ; Off                       ; Off           ;
+; Detect glitches                                                                            ; Off                       ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                       ; Off           ;
+; Generate Signal Activity File                                                              ; Off                       ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                       ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                       ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                        ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                       ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                       ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                      ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------+---------------+
 
 
 +----------------------+
@@ -95,103 +95,108 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      67.92 % ;
-; Total nodes checked                                 ; 53           ;
-; Total output ports checked                          ; 53           ;
-; Total output ports with complete 1/0-value coverage ; 36           ;
-; Total output ports with no 1/0-value coverage       ; 9            ;
-; Total output ports with no 1-value coverage         ; 13           ;
-; Total output ports with no 0-value coverage         ; 13           ;
+; Total coverage as a percentage                      ;      81.67 % ;
+; Total nodes checked                                 ; 60           ;
+; Total output ports checked                          ; 60           ;
+; Total output ports with complete 1/0-value coverage ; 49           ;
+; Total output ports with no 1/0-value coverage       ; 7            ;
+; Total output ports with no 1-value coverage         ; 11           ;
+; Total output ports with no 0-value coverage         ; 7            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                            ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                                        ; Output Port Name                                                                                                                 ; Output Port Type ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst1|lpm_ff:lpm_ff_component|dffs[0]                                ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst1|lpm_ff:lpm_ff_component|dffs[0]                                ; regout           ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w6_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w6_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w5_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w5_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w4_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w4_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w3_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w3_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w2_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w2_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w0_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w0_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst10|inst31                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst10|inst31                                                         ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst12|inst31                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst12|inst31                                                         ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst29                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst29                                                         ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst15|inst27                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst15|inst27                                                         ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|inst17~0                                                                      ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|inst17~0                                                                      ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|inst17~1                                                                      ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|inst17~1                                                                      ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|inst17                                                                        ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|inst17                                                                        ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst15|inst31                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst15|inst31                                                         ; combout          ;
-; |lab5_var4_v1|NF                                                                                                                 ; |lab5_var4_v1|NF                                                                                                                 ; padio            ;
-; |lab5_var4_v1|ALU_out[7]                                                                                                         ; |lab5_var4_v1|ALU_out[7]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_out[6]                                                                                                         ; |lab5_var4_v1|ALU_out[6]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_out[5]                                                                                                         ; |lab5_var4_v1|ALU_out[5]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_out[4]                                                                                                         ; |lab5_var4_v1|ALU_out[4]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_out[3]                                                                                                         ; |lab5_var4_v1|ALU_out[3]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_out[2]                                                                                                         ; |lab5_var4_v1|ALU_out[2]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_out[0]                                                                                                         ; |lab5_var4_v1|ALU_out[0]                                                                                                         ; padio            ;
-; |lab5_var4_v1|ALU_OP[1]                                                                                                          ; |lab5_var4_v1|ALU_OP[1]~corein                                                                                                   ; combout          ;
-; |lab5_var4_v1|A[7]                                                                                                               ; |lab5_var4_v1|A[7]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|ALU_OP[0]                                                                                                          ; |lab5_var4_v1|ALU_OP[0]~corein                                                                                                   ; combout          ;
-; |lab5_var4_v1|B[7]                                                                                                               ; |lab5_var4_v1|B[7]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[5]                                                                                                               ; |lab5_var4_v1|B[5]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[5]                                                                                                               ; |lab5_var4_v1|A[5]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[3]                                                                                                               ; |lab5_var4_v1|B[3]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[3]                                                                                                               ; |lab5_var4_v1|A[3]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[1]                                                                                                               ; |lab5_var4_v1|A[1]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[0]                                                                                                               ; |lab5_var4_v1|A[0]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|clk                                                                                                                ; |lab5_var4_v1|clk~corein                                                                                                         ; combout          ;
-; |lab5_var4_v1|clk~clkctrl                                                                                                        ; |lab5_var4_v1|clk~clkctrl                                                                                                        ; outclk           ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                      ; Output Port Name                                                                                               ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w0_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w0_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:7|inst                                                               ; |arithmetic_logic_unit|CMP:inst12|fulladd:7|inst                                                               ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:2|inst31                                                             ; |arithmetic_logic_unit|CMP:inst12|fulladd:2|inst31                                                             ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst29                                                             ; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst29                                                             ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~1   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~1   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~2   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~2   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~3   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w7_n0_mux_dataout~3   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w6_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w6_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w6_n0_mux_dataout~1   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w6_n0_mux_dataout~1   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:4|inst31                                                             ; |arithmetic_logic_unit|CMP:inst12|fulladd:4|inst31                                                             ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w5_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w5_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w5_n0_mux_dataout~1   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w5_n0_mux_dataout~1   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:4|inst27                                                             ; |arithmetic_logic_unit|CMP:inst12|fulladd:4|inst27                                                             ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w4_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w4_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w3_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w3_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w3_n0_mux_dataout~1   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w3_n0_mux_dataout~1   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:1|inst31                                                             ; |arithmetic_logic_unit|CMP:inst12|fulladd:1|inst31                                                             ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w2_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w2_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w2_n0_mux_dataout~1   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w2_n0_mux_dataout~1   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:1|inst27                                                             ; |arithmetic_logic_unit|CMP:inst12|fulladd:1|inst27                                                             ; combout          ;
+; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w1_n0_mux_dataout~0   ; |arithmetic_logic_unit|lpm_mux2:inst|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w1_n0_mux_dataout~0   ; combout          ;
+; |arithmetic_logic_unit|inst17~0                                                                                ; |arithmetic_logic_unit|inst17~0                                                                                ; combout          ;
+; |arithmetic_logic_unit|inst17~1                                                                                ; |arithmetic_logic_unit|inst17~1                                                                                ; combout          ;
+; |arithmetic_logic_unit|inst17                                                                                  ; |arithmetic_logic_unit|inst17                                                                                  ; combout          ;
+; |arithmetic_logic_unit|lpm_mux3:inst13|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l2_w0_n0_mux_dataout~0 ; |arithmetic_logic_unit|lpm_mux3:inst13|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l2_w0_n0_mux_dataout~0 ; combout          ;
+; |arithmetic_logic_unit|lpm_mux3:inst13|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l2_w0_n0_mux_dataout~1 ; |arithmetic_logic_unit|lpm_mux3:inst13|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l2_w0_n0_mux_dataout~1 ; combout          ;
+; |arithmetic_logic_unit|lpm_mux3:inst13|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l2_w0_n0_mux_dataout~2 ; |arithmetic_logic_unit|lpm_mux3:inst13|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l2_w0_n0_mux_dataout~2 ; combout          ;
+; |arithmetic_logic_unit|ALU_out[7]                                                                              ; |arithmetic_logic_unit|ALU_out[7]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[6]                                                                              ; |arithmetic_logic_unit|ALU_out[6]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[5]                                                                              ; |arithmetic_logic_unit|ALU_out[5]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[4]                                                                              ; |arithmetic_logic_unit|ALU_out[4]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[3]                                                                              ; |arithmetic_logic_unit|ALU_out[3]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[2]                                                                              ; |arithmetic_logic_unit|ALU_out[2]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[1]                                                                              ; |arithmetic_logic_unit|ALU_out[1]                                                                              ; padio            ;
+; |arithmetic_logic_unit|ALU_out[0]                                                                              ; |arithmetic_logic_unit|ALU_out[0]                                                                              ; padio            ;
+; |arithmetic_logic_unit|flags_out[2]                                                                            ; |arithmetic_logic_unit|flags_out[2]                                                                            ; padio            ;
+; |arithmetic_logic_unit|flags_out[1]                                                                            ; |arithmetic_logic_unit|flags_out[1]                                                                            ; padio            ;
+; |arithmetic_logic_unit|flags_out[0]                                                                            ; |arithmetic_logic_unit|flags_out[0]                                                                            ; padio            ;
+; |arithmetic_logic_unit|A[0]                                                                                    ; |arithmetic_logic_unit|A[0]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|A[1]                                                                                    ; |arithmetic_logic_unit|A[1]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|A[3]                                                                                    ; |arithmetic_logic_unit|A[3]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|B[3]                                                                                    ; |arithmetic_logic_unit|B[3]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|A[5]                                                                                    ; |arithmetic_logic_unit|A[5]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|B[5]                                                                                    ; |arithmetic_logic_unit|B[5]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|A[7]                                                                                    ; |arithmetic_logic_unit|A[7]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|B[7]                                                                                    ; |arithmetic_logic_unit|B[7]~corein                                                                             ; combout          ;
+; |arithmetic_logic_unit|ALU_OP[1]                                                                               ; |arithmetic_logic_unit|ALU_OP[1]~corein                                                                        ; combout          ;
+; |arithmetic_logic_unit|ALU_OP[0]                                                                               ; |arithmetic_logic_unit|ALU_OP[0]~corein                                                                        ; combout          ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                                                                                                               ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                                        ; Output Port Name                                                                                                                 ; Output Port Type ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w1_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w1_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst14|inst                                                           ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst14|inst                                                           ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst                                                           ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst                                                           ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst28                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst28                                                         ; combout          ;
-; |lab5_var4_v1|ALU_out[1]                                                                                                         ; |lab5_var4_v1|ALU_out[1]                                                                                                         ; padio            ;
-; |lab5_var4_v1|B[6]                                                                                                               ; |lab5_var4_v1|B[6]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[6]                                                                                                               ; |lab5_var4_v1|A[6]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[4]                                                                                                               ; |lab5_var4_v1|B[4]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[4]                                                                                                               ; |lab5_var4_v1|A[4]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[2]                                                                                                               ; |lab5_var4_v1|B[2]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[2]                                                                                                               ; |lab5_var4_v1|A[2]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[1]                                                                                                               ; |lab5_var4_v1|B[1]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[0]                                                                                                               ; |lab5_var4_v1|B[0]~corein                                                                                                        ; combout          ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                   ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst   ; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst28 ; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst28 ; combout          ;
+; |arithmetic_logic_unit|flags_out[3]                ; |arithmetic_logic_unit|flags_out[3]                ; padio            ;
+; |arithmetic_logic_unit|B[0]                        ; |arithmetic_logic_unit|B[0]~corein                 ; combout          ;
+; |arithmetic_logic_unit|B[1]                        ; |arithmetic_logic_unit|B[1]~corein                 ; combout          ;
+; |arithmetic_logic_unit|A[2]                        ; |arithmetic_logic_unit|A[2]~corein                 ; combout          ;
+; |arithmetic_logic_unit|B[2]                        ; |arithmetic_logic_unit|B[2]~corein                 ; combout          ;
+; |arithmetic_logic_unit|A[4]                        ; |arithmetic_logic_unit|A[4]~corein                 ; combout          ;
+; |arithmetic_logic_unit|B[4]                        ; |arithmetic_logic_unit|B[4]~corein                 ; combout          ;
+; |arithmetic_logic_unit|A[6]                        ; |arithmetic_logic_unit|A[6]~corein                 ; combout          ;
+; |arithmetic_logic_unit|B[6]                        ; |arithmetic_logic_unit|B[6]~corein                 ; combout          ;
++----------------------------------------------------+----------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                                                                                                               ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                                        ; Output Port Name                                                                                                                 ; Output Port Type ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[0]                                ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[0]                                ; regout           ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]                                 ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]                                 ; regout           ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w1_n0_mux_dataout~0 ; |lab5_var4_v1|arithmetic_logic_unit:inst|lpm_mux1:inst29|lpm_mux:lpm_mux_component|mux_c4e:auto_generated|l2_w1_n0_mux_dataout~0 ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst14|inst                                                           ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst14|inst                                                           ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst                                                           ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst                                                           ; combout          ;
-; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst28                                                         ; |lab5_var4_v1|arithmetic_logic_unit:inst|CMP:inst2|fulladd:inst13|inst28                                                         ; combout          ;
-; |lab5_var4_v1|ZF                                                                                                                 ; |lab5_var4_v1|ZF                                                                                                                 ; padio            ;
-; |lab5_var4_v1|CF                                                                                                                 ; |lab5_var4_v1|CF                                                                                                                 ; padio            ;
-; |lab5_var4_v1|ALU_out[1]                                                                                                         ; |lab5_var4_v1|ALU_out[1]                                                                                                         ; padio            ;
-; |lab5_var4_v1|B[6]                                                                                                               ; |lab5_var4_v1|B[6]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[6]                                                                                                               ; |lab5_var4_v1|A[6]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|B[2]                                                                                                               ; |lab5_var4_v1|B[2]~corein                                                                                                        ; combout          ;
-; |lab5_var4_v1|A[2]                                                                                                               ; |lab5_var4_v1|A[2]~corein                                                                                                        ; combout          ;
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                   ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst   ; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst   ; combout          ;
+; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst28 ; |arithmetic_logic_unit|CMP:inst12|fulladd:5|inst28 ; combout          ;
+; |arithmetic_logic_unit|flags_out[3]                ; |arithmetic_logic_unit|flags_out[3]                ; padio            ;
+; |arithmetic_logic_unit|A[2]                        ; |arithmetic_logic_unit|A[2]~corein                 ; combout          ;
+; |arithmetic_logic_unit|B[2]                        ; |arithmetic_logic_unit|B[2]~corein                 ; combout          ;
+; |arithmetic_logic_unit|A[6]                        ; |arithmetic_logic_unit|A[6]~corein                 ; combout          ;
+; |arithmetic_logic_unit|B[6]                        ; |arithmetic_logic_unit|B[6]~corein                 ; combout          ;
++----------------------------------------------------+----------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -207,18 +212,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon May 04 20:33:10 2026
+    Info: Processing started: Mon May 18 13:46:26 2026
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab5_var4_v1 -c lab5_var4_v1
-Info: Using vector source file "C:/Users/lapshet/Desktop/labs/Laba 5/lab5_var4_v1/lab5_var4_v1.vwf"
+Info: Using vector source file "C:/Users/user/Desktop/SiFOVM_labs/Laba 5/lab5_var4_v1/arithmetic_logic_unit.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      67.92 %
-Info: Number of transitions in simulation is 569
+Info: Simulation coverage is      81.67 %
+Info: Number of transitions in simulation is 382
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 170 megabytes
-    Info: Processing ended: Mon May 04 20:33:11 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 168 megabytes
+    Info: Processing ended: Mon May 18 13:46:26 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 336 1096 352)
+	(rect 912 320 1088 336)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ip_en" (rect 90 0 115 12)(font "Arial" ))
 	(pt 0 8)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 288 1096 304)
+	(rect 912 256 1088 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ip_load" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 176 1096 192)
+	(rect 904 144 1080 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ir_load" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -134,7 +134,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 232 1096 248)
+	(rect 912 200 1088 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ar_load" (rect 90 0 125 12)(font "Arial" ))
 	(pt 0 8)
@@ -485,7 +485,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 840 216 904 264)
+	(rect 832 184 896 232)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst30" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -759,7 +759,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 840 272 904 320)
+	(rect 832 240 896 288)
 	(text "AND3" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst50" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1136,68 +1136,9 @@ applicable agreement for further details.
 	(pt 632 616)
 )
 (connector
-	(text "is_RM_reg" (rect 778 232 829 244)(font "Arial" ))
-	(pt 768 248)
-	(pt 840 248)
-)
-(connector
-	(pt 832 288)
-	(pt 832 280)
-)
-(connector
-	(pt 840 288)
-	(pt 832 288)
-)
-(connector
-	(text "is_JMP_reg" (rect 778 264 834 276)(font "Arial" ))
-	(pt 768 280)
-	(pt 832 280)
-)
-(connector
-	(pt 840 304)
-	(pt 832 304)
-)
-(connector
-	(pt 832 304)
-	(pt 832 312)
-)
-(connector
-	(text "flag_Z" (rect 778 296 809 308)(font "Arial" ))
-	(pt 768 312)
-	(pt 832 312)
-)
-(connector
-	(text "DCa[1]" (rect 778 216 813 228)(font "Arial" ))
-	(pt 768 232)
-	(pt 840 232)
-)
-(connector
-	(text "DCa[2]" (rect 786 280 821 292)(font "Arial" ))
-	(pt 768 296)
-	(pt 840 296)
-)
-(connector
-	(text "DCa[0]" (rect 842 168 877 180)(font "Arial" ))
-	(pt 832 184)
-	(pt 920 184)
-)
-(connector
-	(pt 904 240)
-	(pt 920 240)
-)
-(connector
-	(pt 904 296)
-	(pt 920 296)
-)
-(connector
 	(text "is_RM_reg" (rect 778 384 829 396)(font "Arial" ))
 	(pt 768 400)
 	(pt 840 400)
-)
-(connector
-	(text "DCa[1]" (rect 858 328 893 340)(font "Arial" ))
-	(pt 848 344)
-	(pt 920 344)
 )
 (connector
 	(text "DCa[0]" (rect 858 352 893 364)(font "Arial" ))
@@ -1208,11 +1149,6 @@ applicable agreement for further details.
 	(text "DCa[3]" (rect 778 400 813 412)(font "Arial" ))
 	(pt 768 416)
 	(pt 840 416)
-)
-(connector
-	(text "is_RM_reg" (rect 778 440 829 452)(font "Arial" ))
-	(pt 768 456)
-	(pt 840 456)
 )
 (connector
 	(text "DCa[3]" (rect 778 456 813 468)(font "Arial" ))
@@ -1324,6 +1260,70 @@ applicable agreement for further details.
 	(text "DCa[0]" (rect 898 808 933 820)(font "Arial" ))
 	(pt 896 824)
 	(pt 928 824)
+)
+(connector
+	(text "DCa[1]" (rect 858 312 893 324)(font "Arial" ))
+	(pt 848 328)
+	(pt 912 328)
+)
+(connector
+	(text "is_JMP_reg" (rect 762 232 818 244)(font "Arial" ))
+	(pt 752 248)
+	(pt 816 248)
+)
+(connector
+	(text "flag_Z" (rect 762 264 793 276)(font "Arial" ))
+	(pt 752 280)
+	(pt 816 280)
+)
+(connector
+	(text "DCa[0]" (rect 826 136 861 148)(font "Arial" ))
+	(pt 816 152)
+	(pt 904 152)
+)
+(connector
+	(pt 816 248)
+	(pt 816 256)
+)
+(connector
+	(pt 816 280)
+	(pt 816 272)
+)
+(connector
+	(text "DCa[1]" (rect 770 184 805 196)(font "Arial" ))
+	(pt 760 200)
+	(pt 832 200)
+)
+(connector
+	(text "is_RM_reg" (rect 770 200 821 212)(font "Arial" ))
+	(pt 760 216)
+	(pt 832 216)
+)
+(connector
+	(pt 816 256)
+	(pt 832 256)
+)
+(connector
+	(pt 816 272)
+	(pt 832 272)
+)
+(connector
+	(pt 896 208)
+	(pt 912 208)
+)
+(connector
+	(pt 896 264)
+	(pt 912 264)
+)
+(connector
+	(text "DCa[1]" (rect 778 248 813 260)(font "Arial" ))
+	(pt 760 264)
+	(pt 832 264)
+)
+(connector
+	(text "is_JMP_reg" (rect 778 440 834 452)(font "Arial" ))
+	(pt 768 456)
+	(pt 840 456)
 )
 (junction (pt 480 280))
 (junction (pt 480 424))

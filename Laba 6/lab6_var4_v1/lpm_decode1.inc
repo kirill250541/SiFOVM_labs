@@ -20,8 +20,6 @@ FUNCTION lpm_decode1
 )
 
 RETURNS (
-	eq0,
 	eq1,
-	eq2,
-	eq3
+	eq2
 );

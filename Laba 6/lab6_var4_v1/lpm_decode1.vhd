@@ -44,10 +44,8 @@ ENTITY lpm_decode1 IS
 	(
 		data		: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 		enable		: IN STD_LOGIC ;
-		eq0		: OUT STD_LOGIC ;
 		eq1		: OUT STD_LOGIC ;
-		eq2		: OUT STD_LOGIC ;
-		eq3		: OUT STD_LOGIC 
+		eq2		: OUT STD_LOGIC 
 	);
 END lpm_decode1;
 
@@ -57,8 +55,6 @@ ARCHITECTURE SYN OF lpm_decode1 IS
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (3 DOWNTO 0);
 	SIGNAL sub_wire1	: STD_LOGIC ;
 	SIGNAL sub_wire2	: STD_LOGIC ;
-	SIGNAL sub_wire3	: STD_LOGIC ;
-	SIGNAL sub_wire4	: STD_LOGIC ;
 
 
 
@@ -76,14 +72,10 @@ ARCHITECTURE SYN OF lpm_decode1 IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire4    <= sub_wire0(3);
-	sub_wire3    <= sub_wire0(2);
-	sub_wire2    <= sub_wire0(1);
-	sub_wire1    <= sub_wire0(0);
-	eq0    <= sub_wire1;
-	eq1    <= sub_wire2;
-	eq2    <= sub_wire3;
-	eq3    <= sub_wire4;
+	sub_wire2    <= sub_wire0(2);
+	sub_wire1    <= sub_wire0(1);
+	eq1    <= sub_wire1;
+	eq2    <= sub_wire2;
 
 	lpm_decode_component : lpm_decode
 	GENERIC MAP (
@@ -111,11 +103,11 @@ END SYN;
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
--- Retrieval info: PRIVATE: clken NUMERIC "6"
--- Retrieval info: PRIVATE: eq0 NUMERIC "1"
+-- Retrieval info: PRIVATE: clken NUMERIC "0"
+-- Retrieval info: PRIVATE: eq0 NUMERIC "0"
 -- Retrieval info: PRIVATE: eq1 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq2 NUMERIC "1"
--- Retrieval info: PRIVATE: eq3 NUMERIC "1"
+-- Retrieval info: PRIVATE: eq3 NUMERIC "0"
 -- Retrieval info: PRIVATE: nBit NUMERIC "2"
 -- Retrieval info: CONSTANT: LPM_DECODES NUMERIC "4"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_DECODE"
@@ -123,16 +115,12 @@ END SYN;
 -- Retrieval info: USED_PORT: @eq 0 0 LPM_DECODES 0 OUTPUT NODEFVAL @eq[LPM_DECODES-1..0]
 -- Retrieval info: USED_PORT: data 0 0 2 0 INPUT NODEFVAL data[1..0]
 -- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
--- Retrieval info: USED_PORT: eq0 0 0 0 0 OUTPUT NODEFVAL eq0
 -- Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL eq1
 -- Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL eq2
--- Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL eq3
 -- Retrieval info: CONNECT: @data 0 0 2 0 data 0 0 2 0
 -- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
--- Retrieval info: CONNECT: eq0 0 0 0 0 @eq 0 0 1 0
 -- Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
 -- Retrieval info: CONNECT: eq2 0 0 0 0 @eq 0 0 1 2
--- Retrieval info: CONNECT: eq3 0 0 0 0 @eq 0 0 1 3
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_decode1.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_decode1.inc TRUE

@@ -15,15 +15,11 @@
 
 FUNCTION lpm_mux1 
 (
-	data0x[15..0],
-	data1x[15..0],
-	data2x[15..0],
-	data3x[15..0],
-	data4x[15..0],
-	data5x[15..0],
-	sel[2..0]
+	data0x[3..0],
+	data1x[3..0],
+	sel
 )
 
 RETURNS (
-	result[15..0]
+	result[3..0]
 );
