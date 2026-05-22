@@ -68,16 +68,23 @@ applicable agreement for further details.
 	(port
 		(pt 200 48)
 		(output)
-		(text "FULL" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "FULL" (rect 150 43 179 57)(font "Arial" (font_size 8)))
+		(text "overflow" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "overflow" (rect 128 43 179 57)(font "Arial" (font_size 8)))
 		(line (pt 200 48)(pt 184 48)(line_width 1))
 	)
 	(port
 		(pt 200 64)
 		(output)
-		(text "EMPTY" (rect 0 0 40 14)(font "Arial" (font_size 8)))
-		(text "EMPTY" (rect 139 59 179 73)(font "Arial" (font_size 8)))
+		(text "full" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "full" (rect 163 59 179 73)(font "Arial" (font_size 8)))
 		(line (pt 200 64)(pt 184 64)(line_width 1))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "empty" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "empty" (rect 145 75 179 89)(font "Arial" (font_size 8)))
+		(line (pt 200 80)(pt 184 80)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 184 112)(line_width 1))

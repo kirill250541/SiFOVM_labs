@@ -1,5 +1,5 @@
 Assembler report for lab3
-Mon May 18 11:46:24 2026
+Wed May 20 17:22:59 2026
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3.sof
-  6. Assembler Device Options: C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3.pof
+  5. Assembler Device Options: C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3.sof
+  6. Assembler Device Options: C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon May 18 11:46:24 2026 ;
+; Assembler Status      ; Successful - Wed May 20 17:22:59 2026 ;
 ; Revision Name         ; lab3                                  ;
-; Top-level Entity Name ; lab3-2                                ;
+; Top-level Entity Name ; rom_ram_interface                     ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -79,37 +79,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------------------+
-; Assembler Generated Files                                      ;
-+----------------------------------------------------------------+
-; File Name                                                      ;
-+----------------------------------------------------------------+
-; C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3.sof ;
-; C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3.pof ;
-+----------------------------------------------------------------+
++------------------------------------------------------------+
+; Assembler Generated Files                                  ;
++------------------------------------------------------------+
+; File Name                                                  ;
++------------------------------------------------------------+
+; C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3.sof ;
+; C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3.pof ;
++------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3.sof ;
-+----------------+-------------------------------------------------------------------------+
-; Option         ; Setting                                                                 ;
-+----------------+-------------------------------------------------------------------------+
-; Device         ; EP2S15F484C3                                                            ;
-; JTAG usercode  ; 0xFFFFFFFF                                                              ;
-; Checksum       ; 0x00280708                                                              ;
-+----------------+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3.sof ;
++----------------+---------------------------------------------------------------------+
+; Option         ; Setting                                                             ;
++----------------+---------------------------------------------------------------------+
+; Device         ; EP2S15F484C3                                                        ;
+; JTAG usercode  ; 0xFFFFFFFF                                                          ;
+; Checksum       ; 0x0028014B                                                          ;
++----------------+---------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3.pof ;
-+--------------------+---------------------------------------------------------------------+
-; Option             ; Setting                                                             ;
-+--------------------+---------------------------------------------------------------------+
-; Device             ; EPC16                                                               ;
-; JTAG usercode      ; 0xFFFFFFFF                                                          ;
-; Checksum           ; 0x1EF4A85F                                                          ;
-; Compression Ratio  ; 3                                                                   ;
-+--------------------+---------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3.pof ;
++--------------------+-----------------------------------------------------------------+
+; Option             ; Setting                                                         ;
++--------------------+-----------------------------------------------------------------+
+; Device             ; EPC16                                                           ;
+; JTAG usercode      ; 0xFFFFFFFF                                                      ;
+; Checksum           ; 0x1EF3B1A1                                                      ;
+; Compression Ratio  ; 3                                                               ;
++--------------------+-----------------------------------------------------------------+
 
 
 +--------------------+
@@ -118,13 +118,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon May 18 11:46:23 2026
+    Info: Processing started: Wed May 20 17:22:58 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab3 -c lab3
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 254 megabytes
-    Info: Processing ended: Mon May 18 11:46:24 2026
+    Info: Peak virtual memory: 255 megabytes
+    Info: Processing ended: Wed May 20 17:22:59 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -12,6 +12,7 @@ lab3
 --lpm_rom0
 --lpm_ram_io
 --lpm_dff0
+--lpm_mux10
 lab4
 -lpm_mux5
 -rom_ram_interface
@@ -50,6 +51,7 @@ lab5
 --lpm_constant2
 lab6
 -lab5
+-lpm_mux9
 -stack_unit
 --stack_memory
 ---lpm_decode3

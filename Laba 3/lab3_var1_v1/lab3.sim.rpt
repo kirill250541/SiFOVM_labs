@@ -1,5 +1,5 @@
 Simulator report for lab3
-Mon May 18 11:47:14 2026
+Wed May 20 17:24:01 2026
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   2. Simulator Summary
   3. Simulator Settings
   4. Simulation Waveforms
-  5. |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ALTSYNCRAM
-  6. |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ALTSYNCRAM
+  5. |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ALTSYNCRAM
+  6. |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ALTSYNCRAM
   7. Coverage Summary
   8. Complete 1/0-Value Coverage
   9. Missing 1-Value Coverage
@@ -47,9 +47,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 10.0 us      ;
-; Simulation Netlist Size     ; 92 nodes     ;
-; Simulation Coverage         ;      46.74 % ;
-; Total Number of Transitions ; 738          ;
+; Simulation Netlist Size     ; 82 nodes     ;
+; Simulation Coverage         ;      53.66 % ;
+; Total Number of Transitions ; 860          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -91,15 +91,15 @@ Waveform report data cannot be output to ASCII.
 Please use Quartus II to view the waveform report data.
 
 
-+------------------------------------------------------------------------------------------------+
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ALTSYNCRAM ;
-+------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ALTSYNCRAM ;
++---------------------------------------------------------------------------------------------------------------+
 Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
 
 
-+---------------------------------------------------------------------------------------------------+
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ALTSYNCRAM ;
-+---------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------------+
 Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
 
 
@@ -108,162 +108,135 @@ Please refer to fitter text-based report (*.fit.rpt) to view logical memory repo
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      46.74 % ;
-; Total nodes checked                                 ; 92           ;
-; Total output ports checked                          ; 92           ;
-; Total output ports with complete 1/0-value coverage ; 43           ;
-; Total output ports with no 1/0-value coverage       ; 29           ;
-; Total output ports with no 1-value coverage         ; 49           ;
-; Total output ports with no 0-value coverage         ; 29           ;
+; Total coverage as a percentage                      ;      53.66 % ;
+; Total nodes checked                                 ; 82           ;
+; Total output ports checked                          ; 82           ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 12           ;
+; Total output ports with no 1-value coverage         ; 33           ;
+; Total output ports with no 0-value coverage         ; 17           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                            ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                           ; Output Port Name                                                                              ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; |lab3-2|data_out[5]                                                                                 ; |lab3-2|data_out[5]                                                                           ; pin_out          ;
-; |lab3-2|data_out[4]                                                                                 ; |lab3-2|data_out[4]                                                                           ; pin_out          ;
-; |lab3-2|data_out[1]                                                                                 ; |lab3-2|data_out[1]                                                                           ; pin_out          ;
-; |lab3-2|data_out[0]                                                                                 ; |lab3-2|data_out[0]                                                                           ; pin_out          ;
-; |lab3-2|data_bus[5]                                                                                 ; |lab3-2|data_bus[5]                                                                           ; out0             ;
-; |lab3-2|data_bus[4]                                                                                 ; |lab3-2|data_bus[4]                                                                           ; out0             ;
-; |lab3-2|data_bus[1]                                                                                 ; |lab3-2|data_bus[1]                                                                           ; out0             ;
-; |lab3-2|data_bus[0]                                                                                 ; |lab3-2|data_bus[0]                                                                           ; out0             ;
-; |lab3-2|clock                                                                                       ; |lab3-2|clock                                                                                 ; out              ;
-; |lab3-2|ram_chip_en                                                                                 ; |lab3-2|ram_chip_en                                                                           ; out              ;
-; |lab3-2|ram_mode_write                                                                              ; |lab3-2|ram_mode_write                                                                        ; out              ;
-; |lab3-2|ram_read                                                                                    ; |lab3-2|ram_read                                                                              ; out0             ;
-; |lab3-2|ram_mode_read                                                                               ; |lab3-2|ram_mode_read                                                                         ; out              ;
-; |lab3-2|addr[2]                                                                                     ; |lab3-2|addr[2]                                                                               ; out              ;
-; |lab3-2|addr[1]                                                                                     ; |lab3-2|addr[1]                                                                               ; out              ;
-; |lab3-2|inst6[5]                                                                                    ; |lab3-2|inst6[5]                                                                              ; out              ;
-; |lab3-2|inst6[4]                                                                                    ; |lab3-2|inst6[4]                                                                              ; out              ;
-; |lab3-2|inst6[1]                                                                                    ; |lab3-2|inst6[1]                                                                              ; out              ;
-; |lab3-2|inst6[0]                                                                                    ; |lab3-2|inst6[0]                                                                              ; out              ;
-; |lab3-2|reg_write                                                                                   ; |lab3-2|reg_write                                                                             ; out              ;
-; |lab3-2|reg_read                                                                                    ; |lab3-2|reg_read                                                                              ; out              ;
-; |lab3-2|inst5[5]                                                                                    ; |lab3-2|inst5[5]                                                                              ; out              ;
-; |lab3-2|inst5[4]                                                                                    ; |lab3-2|inst5[4]                                                                              ; out              ;
-; |lab3-2|inst5[1]                                                                                    ; |lab3-2|inst5[1]                                                                              ; out              ;
-; |lab3-2|inst5[0]                                                                                    ; |lab3-2|inst5[0]                                                                              ; out              ;
-; |lab3-2|rom_en                                                                                      ; |lab3-2|rom_en                                                                                ; out0             ;
-; |lab3-2|rom_read                                                                                    ; |lab3-2|rom_read                                                                              ; out              ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a0    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[0]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a1    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[1]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a3    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[3]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a4    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[4]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a5    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[5]    ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|_~1                                                                          ; |lab3-2|lpm_ram_io:ram|_~1                                                                    ; out0             ;
-; |lab3-2|lpm_ram_io:ram|_~2                                                                          ; |lab3-2|lpm_ram_io:ram|_~2                                                                    ; out0             ;
-; |lab3-2|lpm_ram_io:ram|datatri[7]~0                                                                 ; |lab3-2|lpm_ram_io:ram|datatri[7]~0                                                           ; out0             ;
-; |lab3-2|lpm_ram_io:ram|datatri[5]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[5]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|datatri[4]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[4]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|datatri[1]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[1]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|datatri[0]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[0]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a0 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[0] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a1 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[1] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a4 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[4] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a5 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[5] ; portadataout0    ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                    ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                       ; Output Port Name                                                                                          ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; |rom_ram_interface|data_out[5]                                                                                  ; |rom_ram_interface|data_out[5]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_out[4]                                                                                  ; |rom_ram_interface|data_out[4]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_out[2]                                                                                  ; |rom_ram_interface|data_out[2]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_out[1]                                                                                  ; |rom_ram_interface|data_out[1]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_out[0]                                                                                  ; |rom_ram_interface|data_out[0]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_bus[5]                                                                                  ; |rom_ram_interface|data_bus[5]                                                                            ; out0             ;
+; |rom_ram_interface|data_bus[4]                                                                                  ; |rom_ram_interface|data_bus[4]                                                                            ; out0             ;
+; |rom_ram_interface|data_bus[2]                                                                                  ; |rom_ram_interface|data_bus[2]                                                                            ; out0             ;
+; |rom_ram_interface|data_bus[1]                                                                                  ; |rom_ram_interface|data_bus[1]                                                                            ; out0             ;
+; |rom_ram_interface|data_bus[0]                                                                                  ; |rom_ram_interface|data_bus[0]                                                                            ; out0             ;
+; |rom_ram_interface|inst7[5]                                                                                     ; |rom_ram_interface|inst7[5]                                                                               ; out              ;
+; |rom_ram_interface|inst7[0]                                                                                     ; |rom_ram_interface|inst7[0]                                                                               ; out              ;
+; |rom_ram_interface|clock                                                                                        ; |rom_ram_interface|clock                                                                                  ; out              ;
+; |rom_ram_interface|reg_read                                                                                     ; |rom_ram_interface|reg_read                                                                               ; out              ;
+; |rom_ram_interface|inst5[5]                                                                                     ; |rom_ram_interface|inst5[5]                                                                               ; out              ;
+; |rom_ram_interface|inst5[4]                                                                                     ; |rom_ram_interface|inst5[4]                                                                               ; out              ;
+; |rom_ram_interface|inst5[2]                                                                                     ; |rom_ram_interface|inst5[2]                                                                               ; out              ;
+; |rom_ram_interface|inst5[1]                                                                                     ; |rom_ram_interface|inst5[1]                                                                               ; out              ;
+; |rom_ram_interface|inst5[0]                                                                                     ; |rom_ram_interface|inst5[0]                                                                               ; out              ;
+; |rom_ram_interface|addr[3]                                                                                      ; |rom_ram_interface|addr[3]                                                                                ; out              ;
+; |rom_ram_interface|addr[2]                                                                                      ; |rom_ram_interface|addr[2]                                                                                ; out              ;
+; |rom_ram_interface|addr[0]                                                                                      ; |rom_ram_interface|addr[0]                                                                                ; out              ;
+; |rom_ram_interface|rom_en                                                                                       ; |rom_ram_interface|rom_en                                                                                 ; out0             ;
+; |rom_ram_interface|rom_read                                                                                     ; |rom_ram_interface|rom_read                                                                               ; out              ;
+; |rom_ram_interface|ram_chip_en                                                                                  ; |rom_ram_interface|ram_chip_en                                                                            ; out              ;
+; |rom_ram_interface|ram_write                                                                                    ; |rom_ram_interface|ram_write                                                                              ; out0             ;
+; |rom_ram_interface|ram_mode_write                                                                               ; |rom_ram_interface|ram_mode_write                                                                         ; out              ;
+; |rom_ram_interface|ram_read                                                                                     ; |rom_ram_interface|ram_read                                                                               ; out0             ;
+; |rom_ram_interface|ram_mode_read                                                                                ; |rom_ram_interface|ram_mode_read                                                                          ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|_~1                                                                          ; |rom_ram_interface|lpm_ram_io:inst|_~1                                                                    ; out0             ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[5]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[5]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[4]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[4]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[1]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[1]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[0]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[0]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a0 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[0] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a1 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[1] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a4 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[4] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a5 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[5] ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a0     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[0]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a1     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[1]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a2     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[2]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a5     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[5]     ; portadataout0    ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]                                           ; regout           ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                                               ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                           ; Output Port Name                                                                              ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; |lab3-2|data_out[7]                                                                                 ; |lab3-2|data_out[7]                                                                           ; pin_out          ;
-; |lab3-2|data_out[6]                                                                                 ; |lab3-2|data_out[6]                                                                           ; pin_out          ;
-; |lab3-2|data_out[3]                                                                                 ; |lab3-2|data_out[3]                                                                           ; pin_out          ;
-; |lab3-2|data_out[2]                                                                                 ; |lab3-2|data_out[2]                                                                           ; pin_out          ;
-; |lab3-2|data_bus[7]                                                                                 ; |lab3-2|data_bus[7]                                                                           ; out0             ;
-; |lab3-2|data_bus[6]                                                                                 ; |lab3-2|data_bus[6]                                                                           ; out0             ;
-; |lab3-2|data_bus[3]                                                                                 ; |lab3-2|data_bus[3]                                                                           ; out0             ;
-; |lab3-2|data_bus[2]                                                                                 ; |lab3-2|data_bus[2]                                                                           ; out0             ;
-; |lab3-2|addr[7]                                                                                     ; |lab3-2|addr[7]                                                                               ; out              ;
-; |lab3-2|addr[6]                                                                                     ; |lab3-2|addr[6]                                                                               ; out              ;
-; |lab3-2|addr[5]                                                                                     ; |lab3-2|addr[5]                                                                               ; out              ;
-; |lab3-2|addr[4]                                                                                     ; |lab3-2|addr[4]                                                                               ; out              ;
-; |lab3-2|addr[3]                                                                                     ; |lab3-2|addr[3]                                                                               ; out              ;
-; |lab3-2|addr[0]                                                                                     ; |lab3-2|addr[0]                                                                               ; out              ;
-; |lab3-2|inst7[7]                                                                                    ; |lab3-2|inst7[7]                                                                              ; out              ;
-; |lab3-2|inst7[6]                                                                                    ; |lab3-2|inst7[6]                                                                              ; out              ;
-; |lab3-2|inst7[5]                                                                                    ; |lab3-2|inst7[5]                                                                              ; out              ;
-; |lab3-2|inst7[4]                                                                                    ; |lab3-2|inst7[4]                                                                              ; out              ;
-; |lab3-2|inst7[3]                                                                                    ; |lab3-2|inst7[3]                                                                              ; out              ;
-; |lab3-2|inst7[2]                                                                                    ; |lab3-2|inst7[2]                                                                              ; out              ;
-; |lab3-2|inst7[1]                                                                                    ; |lab3-2|inst7[1]                                                                              ; out              ;
-; |lab3-2|inst7[0]                                                                                    ; |lab3-2|inst7[0]                                                                              ; out              ;
-; |lab3-2|inst6[7]                                                                                    ; |lab3-2|inst6[7]                                                                              ; out              ;
-; |lab3-2|inst6[6]                                                                                    ; |lab3-2|inst6[6]                                                                              ; out              ;
-; |lab3-2|inst6[3]                                                                                    ; |lab3-2|inst6[3]                                                                              ; out              ;
-; |lab3-2|inst6[2]                                                                                    ; |lab3-2|inst6[2]                                                                              ; out              ;
-; |lab3-2|inst5[7]                                                                                    ; |lab3-2|inst5[7]                                                                              ; out              ;
-; |lab3-2|inst5[6]                                                                                    ; |lab3-2|inst5[6]                                                                              ; out              ;
-; |lab3-2|inst5[3]                                                                                    ; |lab3-2|inst5[3]                                                                              ; out              ;
-; |lab3-2|inst5[2]                                                                                    ; |lab3-2|inst5[2]                                                                              ; out              ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a2    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[2]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a6    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[6]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a7    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[7]    ; portadataout0    ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |lab3-2|lpm_ram_io:ram|datatri[7]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[7]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|datatri[6]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[6]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|datatri[3]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[3]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|datatri[2]                                                                   ; |lab3-2|lpm_ram_io:ram|datatri[2]                                                             ; out              ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a2 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[2] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a3 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[3] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a6 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[6] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a7 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[7] ; portadataout0    ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                       ; Output Port Name                                                                                          ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; |rom_ram_interface|data_out[7]                                                                                  ; |rom_ram_interface|data_out[7]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_out[6]                                                                                  ; |rom_ram_interface|data_out[6]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_out[3]                                                                                  ; |rom_ram_interface|data_out[3]                                                                            ; pin_out          ;
+; |rom_ram_interface|data_bus[7]                                                                                  ; |rom_ram_interface|data_bus[7]                                                                            ; out0             ;
+; |rom_ram_interface|data_bus[6]                                                                                  ; |rom_ram_interface|data_bus[6]                                                                            ; out0             ;
+; |rom_ram_interface|data_bus[3]                                                                                  ; |rom_ram_interface|data_bus[3]                                                                            ; out0             ;
+; |rom_ram_interface|inst7[7]                                                                                     ; |rom_ram_interface|inst7[7]                                                                               ; out              ;
+; |rom_ram_interface|inst7[6]                                                                                     ; |rom_ram_interface|inst7[6]                                                                               ; out              ;
+; |rom_ram_interface|inst7[3]                                                                                     ; |rom_ram_interface|inst7[3]                                                                               ; out              ;
+; |rom_ram_interface|inst7[2]                                                                                     ; |rom_ram_interface|inst7[2]                                                                               ; out              ;
+; |rom_ram_interface|inst5[7]                                                                                     ; |rom_ram_interface|inst5[7]                                                                               ; out              ;
+; |rom_ram_interface|inst5[6]                                                                                     ; |rom_ram_interface|inst5[6]                                                                               ; out              ;
+; |rom_ram_interface|inst5[3]                                                                                     ; |rom_ram_interface|inst5[3]                                                                               ; out              ;
+; |rom_ram_interface|addr[7]                                                                                      ; |rom_ram_interface|addr[7]                                                                                ; out              ;
+; |rom_ram_interface|addr[6]                                                                                      ; |rom_ram_interface|addr[6]                                                                                ; out              ;
+; |rom_ram_interface|addr[5]                                                                                      ; |rom_ram_interface|addr[5]                                                                                ; out              ;
+; |rom_ram_interface|addr[4]                                                                                      ; |rom_ram_interface|addr[4]                                                                                ; out              ;
+; |rom_ram_interface|addr[1]                                                                                      ; |rom_ram_interface|addr[1]                                                                                ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[7]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[7]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[6]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[6]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[3]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[3]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|datatri[2]                                                                   ; |rom_ram_interface|lpm_ram_io:inst|datatri[2]                                                             ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a2 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[2] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a3 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[3] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a6 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[6] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a7 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[7] ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a3     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[3]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a6     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[6]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a7     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[7]     ; portadataout0    ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                                               ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                           ; Output Port Name                                                                              ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; |lab3-2|addr[7]                                                                                     ; |lab3-2|addr[7]                                                                               ; out              ;
-; |lab3-2|addr[6]                                                                                     ; |lab3-2|addr[6]                                                                               ; out              ;
-; |lab3-2|addr[5]                                                                                     ; |lab3-2|addr[5]                                                                               ; out              ;
-; |lab3-2|addr[4]                                                                                     ; |lab3-2|addr[4]                                                                               ; out              ;
-; |lab3-2|addr[3]                                                                                     ; |lab3-2|addr[3]                                                                               ; out              ;
-; |lab3-2|addr[0]                                                                                     ; |lab3-2|addr[0]                                                                               ; out              ;
-; |lab3-2|inst7[7]                                                                                    ; |lab3-2|inst7[7]                                                                              ; out              ;
-; |lab3-2|inst7[6]                                                                                    ; |lab3-2|inst7[6]                                                                              ; out              ;
-; |lab3-2|inst7[5]                                                                                    ; |lab3-2|inst7[5]                                                                              ; out              ;
-; |lab3-2|inst7[4]                                                                                    ; |lab3-2|inst7[4]                                                                              ; out              ;
-; |lab3-2|inst7[3]                                                                                    ; |lab3-2|inst7[3]                                                                              ; out              ;
-; |lab3-2|inst7[2]                                                                                    ; |lab3-2|inst7[2]                                                                              ; out              ;
-; |lab3-2|inst7[1]                                                                                    ; |lab3-2|inst7[1]                                                                              ; out              ;
-; |lab3-2|inst7[0]                                                                                    ; |lab3-2|inst7[0]                                                                              ; out              ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a2    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[2]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a6    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[6]    ; portadataout0    ;
-; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|ram_block1a7    ; |lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_os61:auto_generated|q_a[7]    ; portadataout0    ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
-; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]                                                ; |lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a2 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[2] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a3 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[3] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a6 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[6] ; portadataout0    ;
-; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a7 ; |lab3-2|lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[7] ; portadataout0    ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                       ; Output Port Name                                                                                          ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; |rom_ram_interface|inst7[4]                                                                                     ; |rom_ram_interface|inst7[4]                                                                               ; out              ;
+; |rom_ram_interface|inst7[1]                                                                                     ; |rom_ram_interface|inst7[1]                                                                               ; out              ;
+; |rom_ram_interface|addr[7]                                                                                      ; |rom_ram_interface|addr[7]                                                                                ; out              ;
+; |rom_ram_interface|addr[6]                                                                                      ; |rom_ram_interface|addr[6]                                                                                ; out              ;
+; |rom_ram_interface|addr[5]                                                                                      ; |rom_ram_interface|addr[5]                                                                                ; out              ;
+; |rom_ram_interface|addr[4]                                                                                      ; |rom_ram_interface|addr[4]                                                                                ; out              ;
+; |rom_ram_interface|addr[1]                                                                                      ; |rom_ram_interface|addr[1]                                                                                ; out              ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a2 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[2] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a3 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[3] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a6 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[6] ; portadataout0    ;
+; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|ram_block1a7 ; |rom_ram_interface|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_1a91:auto_generated|q_a[7] ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a3     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[3]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a4     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[4]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a6     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[6]     ; portadataout0    ;
+; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a7     ; |rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[7]     ; portadataout0    ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]                                                 ; |rom_ram_interface|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
++-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -279,26 +252,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon May 18 11:47:13 2026
+    Info: Processing started: Wed May 20 17:24:01 2026
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab3 -c lab3
-Info: Using vector source file "C:/Users/user/Desktop/SiFOVM_labs/Laba 3/lab3_var1_v1/lab3-2-test.vwf"
+Info: Using vector source file "C:/Users/lapshet/Desktop/labs/Laba 3/lab3_var1_v1/lab3-2-test.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[7]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[6]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[5]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[4]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[3]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[2]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[1]"
-Warning: Found clock-sensitive change during active clock edge at time 150.0 ns on register "|lab3-2|lpm_dff0:reg|lpm_ff:lpm_ff_component|dffs[0]"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      46.74 %
-Info: Number of transitions in simulation is 738
-Info: Quartus II Simulator was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 163 megabytes
-    Info: Processing ended: Mon May 18 11:47:14 2026
-    Info: Elapsed time: 00:00:01
+Info: Simulation coverage is      53.66 %
+Info: Number of transitions in simulation is 860
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Wed May 20 17:24:01 2026
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

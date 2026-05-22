@@ -45,6 +45,7 @@ ENTITY lpm_ff9 IS
 		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+		enable		: IN STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
 	);
 END lpm_ff9;
@@ -63,6 +64,7 @@ ARCHITECTURE SYN OF lpm_ff9 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
+			enable	: IN STD_LOGIC ;
 			aclr	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (2 DOWNTO 0);
@@ -80,6 +82,7 @@ BEGIN
 		lpm_width => 3
 	)
 	PORT MAP (
+		enable => enable,
 		aclr => aclr,
 		clock => clock,
 		data => data,
@@ -97,13 +100,13 @@ END SYN;
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
--- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
+-- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
 -- Retrieval info: PRIVATE: nBit NUMERIC "3"
@@ -113,9 +116,11 @@ END SYN;
 -- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: data 0 0 3 0 INPUT NODEFVAL data[2..0]
+-- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 -- Retrieval info: USED_PORT: q 0 0 3 0 OUTPUT NODEFVAL q[2..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 3 0 @q 0 0 3 0
+-- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 -- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 -- Retrieval info: CONNECT: @data 0 0 3 0 data 0 0 3 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all

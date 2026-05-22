@@ -17,9 +17,7 @@ FUNCTION lpm_mux2
 (
 	data0x[7..0],
 	data1x[7..0],
-	data2x[7..0],
-	data3x[7..0],
-	sel[1..0]
+	sel
 )
 
 RETURNS (

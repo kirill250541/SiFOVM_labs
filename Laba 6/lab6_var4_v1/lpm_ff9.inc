@@ -17,7 +17,8 @@ FUNCTION lpm_ff9
 (
 	aclr,
 	clock,
-	data[2..0]
+	data[2..0],
+	enable
 )
 
 RETURNS (

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="lab3">
-		<CBX_INST_ENTRY INSTANCE_NAME="|lab3-2|LPM_RAM_IO:ram|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_1a91.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|lab3-2|lpm_rom0:rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_os61.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rom_ram_interface|LPM_RAM_IO:inst|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_1a91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rom_ram_interface|lpm_rom0:rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rh71.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -150,7 +150,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 632 1104 648)
+	(rect 928 768 1104 784)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "dr_load" (rect 90 0 125 12)(font "Arial" ))
 	(pt 0 8)
@@ -182,7 +182,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 576 1104 592)
+	(rect 928 712 1104 728)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "dr_src_sel" (rect 90 0 140 12)(font "Arial" ))
 	(pt 0 8)
@@ -198,7 +198,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 768 1104 784)
+	(rect 928 904 1104 920)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "isRM" (rect 90 0 114 12)(font "Arial" ))
 	(pt 0 8)
@@ -214,7 +214,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 744 1104 760)
+	(rect 928 880 1104 896)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "isJMP" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
@@ -230,7 +230,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 456 1096 472)
+	(rect 920 520 1096 536)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "addr_sel" (rect 90 0 131 12)(font "Arial" ))
 	(pt 0 8)
@@ -262,7 +262,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 512 1096 528)
+	(rect 920 648 1096 664)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ram_we" (rect 90 0 127 12)(font "Arial" ))
 	(pt 0 8)
@@ -294,7 +294,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 688 1104 704)
+	(rect 928 824 1104 840)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ron_we" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -310,7 +310,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 816 1104 832)
+	(rect 928 952 1104 968)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DCa0" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -326,7 +326,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 840 1104 856)
+	(rect 928 976 1104 992)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DCa1" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -342,7 +342,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 864 1104 880)
+	(rect 928 1000 1104 1016)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DCa2" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -358,7 +358,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 888 1104 904)
+	(rect 928 1024 1104 1040)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DCa3" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -374,25 +374,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 912 1104 928)
+	(rect 928 1048 1104 1064)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DCa4" (rect 90 0 118 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
-	(rect 928 952 1104 968)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ALU_OP[1..0]" (rect 90 0 158 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -437,7 +421,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 848 560 912 608)
+	(rect 848 696 912 744)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst22" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -469,7 +453,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 848 616 912 664)
+	(rect 848 752 912 800)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst23" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -756,7 +740,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 768 496 864 544)
+	(rect 768 632 864 680)
 	(text "lpm_constant1" (rect 6 1 106 17)(font "Arial" (font_size 10)))
 	(text "inst49" (rect 8 32 37 44)(font "Arial" ))
 	(port
@@ -874,7 +858,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 848 672 912 720)
+	(rect 848 808 912 856)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst24" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -906,9 +890,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 840 440 904 488)
+	(rect 840 504 904 552)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst17" (rect 3 37 32 49)(font "Arial" ))
+	(text "inst18" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -935,6 +919,39 @@ applicable agreement for further details.
 		(line (pt 14 37)(pt 31 37)(line_width 1))
 		(line (pt 14 12)(pt 14 37)(line_width 1))
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
+(symbol
+	(rect 744 536 808 584)
+	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 15 32)(line_width 1))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 15 16)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 36)(pt 25 36)(line_width 1))
+		(line (pt 14 13)(pt 25 13)(line_width 1))
+		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41)(line_width 1))
+		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76)(line_width 1))
+		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
 	)
 )
 (connector
@@ -1167,75 +1184,8 @@ applicable agreement for further details.
 	(pt 840 416)
 )
 (connector
-	(text "DCa[3]" (rect 778 456 813 468)(font "Arial" ))
-	(pt 768 472)
-	(pt 840 472)
-)
-(connector
-	(text "is_RM_reg" (rect 786 560 837 572)(font "Arial" ))
-	(pt 776 576)
-	(pt 848 576)
-)
-(connector
-	(text "DCa[3]" (rect 786 576 821 588)(font "Arial" ))
-	(pt 776 592)
-	(pt 848 592)
-)
-(connector
 	(pt 904 408)
 	(pt 920 408)
-)
-(connector
-	(pt 912 584)
-	(pt 928 584)
-)
-(connector
-	(text "zero" (rect 874 504 894 516)(font "Arial" ))
-	(pt 864 520)
-	(pt 920 520)
-)
-(connector
-	(text "<<__$DEF_ALIAS9117>>" (rect 922 448 1045 460)(font "Arial" )(invisible))
-	(pt 904 464)
-	(pt 920 464)
-)
-(connector
-	(text "is_RM_reg" (rect 786 616 837 628)(font "Arial" ))
-	(pt 776 632)
-	(pt 848 632)
-)
-(connector
-	(pt 912 640)
-	(pt 928 640)
-)
-(connector
-	(text "DCa[4]" (rect 786 632 821 644)(font "Arial" ))
-	(pt 776 648)
-	(pt 848 648)
-)
-(connector
-	(text "is_RM_reg" (rect 786 672 837 684)(font "Arial" ))
-	(pt 776 688)
-	(pt 848 688)
-)
-(connector
-	(pt 912 696)
-	(pt 928 696)
-)
-(connector
-	(text "DCa[4]" (rect 786 688 821 700)(font "Arial" ))
-	(pt 776 704)
-	(pt 848 704)
-)
-(connector
-	(text "is_RM" (rect 888 756 918 768)(font "Arial" ))
-	(pt 904 776)
-	(pt 928 776)
-)
-(connector
-	(text "is_JMP" (rect 888 732 923 744)(font "Arial" ))
-	(pt 904 752)
-	(pt 928 752)
 )
 (connector
 	(text "rst_n" (rect 202 344 226 356)(font "Arial" ))
@@ -1251,31 +1201,6 @@ applicable agreement for further details.
 	(text "<<__$DEF_ALIAS11207>>" (rect 410 584 539 596)(font "Arial" )(invisible))
 	(pt 400 600)
 	(pt 416 600)
-)
-(connector
-	(text "DCa[1]" (rect 898 832 933 844)(font "Arial" ))
-	(pt 896 848)
-	(pt 928 848)
-)
-(connector
-	(text "DCa[2]" (rect 898 856 933 868)(font "Arial" ))
-	(pt 896 872)
-	(pt 928 872)
-)
-(connector
-	(text "DCa[3]" (rect 898 880 933 892)(font "Arial" ))
-	(pt 896 896)
-	(pt 928 896)
-)
-(connector
-	(text "DCa[4]" (rect 898 904 933 916)(font "Arial" ))
-	(pt 896 920)
-	(pt 928 920)
-)
-(connector
-	(text "DCa[0]" (rect 898 808 933 820)(font "Arial" ))
-	(pt 896 824)
-	(pt 928 824)
 )
 (connector
 	(text "DCa[1]" (rect 858 312 893 324)(font "Arial" ))
@@ -1337,9 +1262,117 @@ applicable agreement for further details.
 	(pt 832 264)
 )
 (connector
-	(text "is_JMP_reg" (rect 778 440 834 452)(font "Arial" ))
-	(pt 768 456)
-	(pt 840 456)
+	(text "is_RM_reg" (rect 786 696 837 708)(font "Arial" ))
+	(pt 776 712)
+	(pt 848 712)
+)
+(connector
+	(text "DCa[3]" (rect 786 712 821 724)(font "Arial" ))
+	(pt 776 728)
+	(pt 848 728)
+)
+(connector
+	(pt 912 720)
+	(pt 928 720)
+)
+(connector
+	(text "zero" (rect 874 640 894 652)(font "Arial" ))
+	(pt 864 656)
+	(pt 920 656)
+)
+(connector
+	(text "is_RM_reg" (rect 786 752 837 764)(font "Arial" ))
+	(pt 776 768)
+	(pt 848 768)
+)
+(connector
+	(pt 912 776)
+	(pt 928 776)
+)
+(connector
+	(text "is_RM_reg" (rect 786 808 837 820)(font "Arial" ))
+	(pt 776 824)
+	(pt 848 824)
+)
+(connector
+	(pt 912 832)
+	(pt 928 832)
+)
+(connector
+	(text "DCa[4]" (rect 786 824 821 836)(font "Arial" ))
+	(pt 776 840)
+	(pt 848 840)
+)
+(connector
+	(text "is_RM" (rect 888 892 918 904)(font "Arial" ))
+	(pt 904 912)
+	(pt 928 912)
+)
+(connector
+	(text "is_JMP" (rect 888 868 923 880)(font "Arial" ))
+	(pt 904 888)
+	(pt 928 888)
+)
+(connector
+	(text "DCa[1]" (rect 898 968 933 980)(font "Arial" ))
+	(pt 896 984)
+	(pt 928 984)
+)
+(connector
+	(text "DCa[2]" (rect 898 992 933 1004)(font "Arial" ))
+	(pt 896 1008)
+	(pt 928 1008)
+)
+(connector
+	(text "DCa[3]" (rect 898 1016 933 1028)(font "Arial" ))
+	(pt 896 1032)
+	(pt 928 1032)
+)
+(connector
+	(text "DCa[4]" (rect 898 1040 933 1052)(font "Arial" ))
+	(pt 896 1056)
+	(pt 928 1056)
+)
+(connector
+	(text "DCa[0]" (rect 898 944 933 956)(font "Arial" ))
+	(pt 896 960)
+	(pt 928 960)
+)
+(connector
+	(text "DCa[3]" (rect 786 768 821 780)(font "Arial" ))
+	(pt 776 784)
+	(pt 848 784)
+)
+(connector
+	(text "is_RM_reg" (rect 778 504 829 516)(font "Arial" ))
+	(pt 768 520)
+	(pt 840 520)
+)
+(connector
+	(text "DCa[3]" (rect 682 552 717 564)(font "Arial" ))
+	(pt 672 568)
+	(pt 744 568)
+)
+(connector
+	(text "DCa[2]" (rect 682 536 717 548)(font "Arial" ))
+	(pt 672 552)
+	(pt 744 552)
+)
+(connector
+	(pt 808 560)
+	(pt 824 560)
+)
+(connector
+	(pt 824 560)
+	(pt 824 536)
+)
+(connector
+	(pt 824 536)
+	(pt 840 536)
+)
+(connector
+	(pt 904 528)
+	(pt 920 528)
 )
 (junction (pt 480 280))
 (junction (pt 480 424))

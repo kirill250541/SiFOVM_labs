@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 144 144 312 160)
+	(rect 144 64 312 80)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "data_in[7..0]" (rect 9 0 70 12)(font "Arial" ))
 	(pt 168 8)
@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 120 312 136)
+	(rect 144 96 312 112)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "sel[2..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
@@ -86,9 +86,25 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 96 312 112)
+	(rect 72 360 240 376)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "push_en" (rect 5 0 46 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 72 376 240 392)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "pop_en" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -668,6 +684,39 @@ applicable agreement for further details.
 		(line (pt 16 160)(pt 16 16)(line_width 1))
 	)
 )
+(symbol
+	(rect 256 352 320 400)
+	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 15 32)(line_width 1))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 15 16)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 36)(pt 25 36)(line_width 1))
+		(line (pt 14 13)(pt 25 13)(line_width 1))
+		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41)(line_width 1))
+		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76)(line_width 1))
+		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
+	)
+)
 (connector
 	(pt 776 160)
 	(pt 888 160)
@@ -748,11 +797,6 @@ applicable agreement for further details.
 (connector
 	(pt 560 280)
 	(pt 632 280)
-)
-(connector
-	(pt 576 152)
-	(pt 576 264)
-	(bus)
 )
 (connector
 	(pt 560 168)
@@ -1060,20 +1104,9 @@ applicable agreement for further details.
 	(pt 632 168)
 )
 (connector
-	(pt 312 152)
-	(pt 576 152)
-	(bus)
-)
-(connector
 	(text "<<__$DEF_ALIAS20858>>" (rect 418 152 547 164)(font "Arial" )(invisible))
 	(pt 312 168)
 	(pt 560 168)
-)
-(connector
-	(text "sel[2..0]" (rect 314 112 354 124)(font "Arial" ))
-	(pt 312 128)
-	(pt 352 128)
-	(bus)
 )
 (connector
 	(pt 400 224)
@@ -1094,14 +1127,47 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "push_en" (rect 312 336 353 348)(font "Arial" ))
-	(pt 304 352)
+	(pt 336 352)
 	(pt 352 352)
 )
 (connector
-	(text "push_en" (rect 320 88 361 100)(font "Arial" ))
+	(pt 336 352)
+	(pt 336 376)
+)
+(connector
+	(pt 336 376)
+	(pt 320 376)
+)
+(connector
+	(text "<<__$DEF_ALIAS5462>>" (rect 248 368 371 380)(font "Arial" )(invisible))
+	(pt 240 384)
+	(pt 256 384)
+)
+(connector
+	(text "<<__$DEF_ALIAS5460>>" (rect 242 352 365 364)(font "Arial" )(invisible))
+	(pt 240 368)
+	(pt 256 368)
+)
+(connector
+	(text "sel[2..0]" (rect 314 88 354 100)(font "Arial" ))
 	(pt 312 104)
 	(pt 352 104)
+	(bus)
+)
+(connector
+	(pt 576 72)
+	(pt 312 72)
+	(bus)
+)
+(connector
+	(pt 576 72)
+	(pt 576 152)
+	(bus)
+)
+(connector
+	(pt 576 152)
+	(pt 576 264)
+	(bus)
 )
 (junction (pt 576 152))
 (junction (pt 560 168))
