@@ -1,5 +1,5 @@
 Simulator report for lab4_var2_v1
-Fri May 22 00:51:31 2026
+Sat May 23 13:59:22 2026
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 15 nodes     ;
-; Simulation Coverage         ;      93.33 % ;
-; Total Number of Transitions ; 274          ;
+; Simulation Netlist Size     ; 46 nodes     ;
+; Simulation Coverage         ;      82.61 % ;
+; Total Number of Transitions ; 363          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -62,7 +62,7 @@ applicable agreement for further details.
 ; Start time                                                                                 ; 0 ns        ; 0 ns          ;
 ; End time                                                                                   ; 3 us        ;               ;
 ; Simulation results format                                                                  ; CVWF        ;               ;
-; Vector input source                                                                        ; ar_unit.vwf ;               ;
+; Vector input source                                                                        ; ip_unit.vwf ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
 ; Check outputs                                                                              ; Off         ; Off           ;
 ; Report simulation coverage                                                                 ; On          ; On            ;
@@ -95,55 +95,93 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      93.33 % ;
-; Total nodes checked                                 ; 15           ;
-; Total output ports checked                          ; 15           ;
-; Total output ports with complete 1/0-value coverage ; 14           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 1            ;
+; Total coverage as a percentage                      ;      82.61 % ;
+; Total nodes checked                                 ; 46           ;
+; Total output ports checked                          ; 46           ;
+; Total output ports with complete 1/0-value coverage ; 38           ;
+; Total output ports with no 1/0-value coverage       ; 6            ;
+; Total output ports with no 1-value coverage         ; 6            ;
+; Total output ports with no 0-value coverage         ; 8            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                          ;
-+---------------------------------------------------------+---------------------------------------------------------+------------------+
-; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
-+---------------------------------------------------------+---------------------------------------------------------+------------------+
-; |ar_unit|addr_out[3]                                    ; |ar_unit|addr_out[3]                                    ; pin_out          ;
-; |ar_unit|addr_out[2]                                    ; |ar_unit|addr_out[2]                                    ; pin_out          ;
-; |ar_unit|addr_out[1]                                    ; |ar_unit|addr_out[1]                                    ; pin_out          ;
-; |ar_unit|addr_out[0]                                    ; |ar_unit|addr_out[0]                                    ; pin_out          ;
-; |ar_unit|clk                                            ; |ar_unit|clk                                            ; out              ;
-; |ar_unit|load_en                                        ; |ar_unit|load_en                                        ; out              ;
-; |ar_unit|addr_in[3]                                     ; |ar_unit|addr_in[3]                                     ; out              ;
-; |ar_unit|addr_in[2]                                     ; |ar_unit|addr_in[2]                                     ; out              ;
-; |ar_unit|addr_in[1]                                     ; |ar_unit|addr_in[1]                                     ; out              ;
-; |ar_unit|addr_in[0]                                     ; |ar_unit|addr_in[0]                                     ; out              ;
-; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[3] ; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[3] ; regout           ;
-; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[2] ; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[2] ; regout           ;
-; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[1] ; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[1] ; regout           ;
-; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[0] ; |ar_unit|lpm_ff5:reg_ar|lpm_ff:lpm_ff_component|dffs[0] ; regout           ;
-+---------------------------------------------------------+---------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                            ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                                 ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; |ip_unit|ip[2]                                                                                   ; |ip_unit|ip[2]                                                                                   ; pin_out          ;
+; |ip_unit|ip[1]                                                                                   ; |ip_unit|ip[1]                                                                                   ; pin_out          ;
+; |ip_unit|ip[0]                                                                                   ; |ip_unit|ip[0]                                                                                   ; pin_out          ;
+; |ip_unit|clk                                                                                     ; |ip_unit|clk                                                                                     ; out              ;
+; |ip_unit|en                                                                                      ; |ip_unit|en                                                                                      ; out              ;
+; |ip_unit|jmp_en                                                                                  ; |ip_unit|jmp_en                                                                                  ; out              ;
+; |ip_unit|offset[1]                                                                               ; |ip_unit|offset[1]                                                                               ; out              ;
+; |ip_unit|offset[0]                                                                               ; |ip_unit|offset[0]                                                                               ; out              ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~0  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~1  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout    ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~0  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~0  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~1  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~1  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout    ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout    ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~0  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~0  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~1  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~1  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout    ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout    ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~0  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~0  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~1  ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~1  ; out0             ;
+; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout    ; |ip_unit|lpm_mux4:inst3|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout    ; out0             ;
+; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[2]                                          ; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
+; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[1]                                          ; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
+; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[0]                                          ; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12 ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12 ; out0             ;
+; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~0  ; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~0  ; out0             ;
+; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~1  ; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~1  ; out0             ;
+; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~2  ; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~2  ; out0             ;
+; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~3  ; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~3  ; out0             ;
+; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~4  ; |ip_unit|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_uoh:auto_generated|op_1~4  ; out0             ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                               ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                                 ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; |ip_unit|rst_en                                                                                  ; |ip_unit|rst_en                                                                                  ; out              ;
+; |ip_unit|offset[3]                                                                               ; |ip_unit|offset[3]                                                                               ; out              ;
+; |ip_unit|offset[2]                                                                               ; |ip_unit|offset[2]                                                                               ; out              ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10 ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10 ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11 ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11 ; out0             ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------+
-; Missing 0-Value Coverage                             ;
-+----------------+------------------+------------------+
-; Node Name      ; Output Port Name ; Output Port Type ;
-+----------------+------------------+------------------+
-; |ar_unit|rst_n ; |ar_unit|rst_n   ; out              ;
-+----------------+------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                               ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                                 ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; |ip_unit|ip[3]                                                                                   ; |ip_unit|ip[3]                                                                                   ; pin_out          ;
+; |ip_unit|rst_en                                                                                  ; |ip_unit|rst_en                                                                                  ; out              ;
+; |ip_unit|offset[3]                                                                               ; |ip_unit|offset[3]                                                                               ; out              ;
+; |ip_unit|offset[2]                                                                               ; |ip_unit|offset[2]                                                                               ; out              ;
+; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[3]                                          ; |ip_unit|lpm_dff4:inst4|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4  ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4  ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10 ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10 ; out0             ;
+; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11 ; |ip_unit|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11 ; out0             ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -159,20 +197,24 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Fri May 22 00:51:31 2026
+    Info: Processing started: Sat May 23 13:59:22 2026
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab4_var2_v1 -c lab4_var2_v1
 Warning: Tcl Script File lab3_var7_v1/lpm_dff0.qip not found
     Info: set_global_assignment -name QIP_FILE lab3_var7_v1/lpm_dff0.qip
-Info: Using vector source file "C:/Users/lapshet/Desktop/labs/Laba 4/lab4_var2_v1/ar_unit.vwf"
+Warning: Tcl Script File ../../../labs_primers/sifovm-main/Laba 4/lpm_mux10.qip not found
+    Info: set_global_assignment -name QIP_FILE "../../../labs_primers/sifovm-main/Laba 4/lpm_mux10.qip"
+Info: Using vector source file "C:/Users/user/Desktop/SiFOVM_labs/Laba 4/lab4_var2_v1/ip_unit.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "rst_n" in design.
+Warning: Can't find signal in vector source file for input pin "|ip_unit|rst_en"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      93.33 %
-Info: Number of transitions in simulation is 274
-Info: Quartus II Simulator was successful. 0 errors, 1 warning
+Info: Simulation coverage is      82.61 %
+Info: Number of transitions in simulation is 363
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 163 megabytes
-    Info: Processing ended: Fri May 22 00:51:31 2026
+    Info: Processing ended: Sat May 23 13:59:22 2026
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

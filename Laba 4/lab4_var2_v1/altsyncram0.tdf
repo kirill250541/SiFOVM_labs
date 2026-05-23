@@ -50,7 +50,7 @@ VARIABLE
 	altsyncram_component : altsyncram WITH (
 			CLOCK_ENABLE_INPUT_A = "BYPASS",
 			CLOCK_ENABLE_OUTPUT_A = "BYPASS",
-			INIT_FILE = "../../../labs/Laba 4/lab4_var2_v1/ram_var2.hex",
+			INIT_FILE = "ram_var2.hex",
 			INTENDED_DEVICE_FAMILY = "Stratix II",
 			LPM_HINT = "ENABLE_RUNTIME_MOD=NO",
 			LPM_TYPE = "altsyncram",
@@ -111,7 +111,7 @@ END;
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 -- Retrieval info: PRIVATE: MEMSIZE NUMERIC "128"
 -- Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
--- Retrieval info: PRIVATE: MIFfilename STRING "../../../labs/Laba 4/lab4_var2_v1/ram_var2.hex"
+-- Retrieval info: PRIVATE: MIFfilename STRING "ram_var2.hex"
 -- Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "1"
 -- Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
 -- Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "1"
@@ -140,7 +140,7 @@ END;
 -- Retrieval info: PRIVATE: rden NUMERIC "0"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
--- Retrieval info: CONSTANT: INIT_FILE STRING "../../../labs/Laba 4/lab4_var2_v1/ram_var2.hex"
+-- Retrieval info: CONSTANT: INIT_FILE STRING "ram_var2.hex"
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
